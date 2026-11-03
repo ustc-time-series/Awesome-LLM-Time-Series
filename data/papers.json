@@ -1,0 +1,3257 @@
+[
+  {
+    "id": "nlts",
+    "category": "direct",
+    "title": "Enhancing Zero-Shot Time Series Forecasting in Off-the-Shelf LLMs via Noise Injection Prompting",
+    "authors": [
+      "Xingyou Yin",
+      "Ceyao Zhang",
+      "Min Hu",
+      "Kai Chen"
+    ],
+    "year": 2025,
+    "venue": "Findings of ACL 2026",
+    "paper_url": "https://aclanthology.org/2026.findings-acl.2054/",
+    "arxiv_id": "2512.20140",
+    "code_url": "https://github.com/jkumh/NLTS",
+    "summary": "Adds noise to numerical histories before digit tokenization as an inference-time augmentation for unmodified language-model forecasters, including tests on post-pretraining data.",
+    "sources": [
+      "https://aclanthology.org/2026.findings-acl.2054/",
+      "https://arxiv.org/abs/2512.20140",
+      "https://github.com/jkumh/NLTS"
+    ],
+    "venue_source_url": "https://aclanthology.org/2026.findings-acl.2054/",
+    "first_public_date": "2025-12-23",
+    "doi": "10.18653/v1/2026.findings-acl.2054",
+    "caveat": "Final title adds Prompting relative to the arXiv title; first public year is 2025 even though the verified publication venue is Findings of ACL 2026.",
+    "citation_count": null,
+    "citation_count_note": "Not collected; no unsupported or stale citation counts are supplied.",
+    "pdf_status": "Not downloaded; canonical source provides a PDF link.",
+    "source_platforms": [
+      "aclanthology.org",
+      "arxiv.org",
+      "github.com"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "aclanthology.org",
+          "source_url": "https://aclanthology.org/2026.findings-acl.2054/",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ],
+      "code_url": [
+        {
+          "platform": "github.com",
+          "source_url": "https://github.com/jkumh/NLTS",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text",
+          "note": "Author association checked against the cited paper or author project; the link alone does not establish implementation completeness."
+        }
+      ]
+    },
+    "year_basis": "First public date in the cited paper record: 2025-12-23",
+    "resource_type": "author-linked repository"
+  },
+  {
+    "id": "timerag_yang",
+    "category": "direct",
+    "title": "TimeRAG: Boosting LLM Time Series Forecasting via Retrieval-Augmented Generation",
+    "authors": [
+      "Silin Yang",
+      "Dong Wang",
+      "Haoqi Zheng",
+      "Ruochun Jin"
+    ],
+    "year": 2024,
+    "venue": "ICASSP 2025",
+    "paper_url": "https://ieeexplore.ieee.org/document/10889933",
+    "arxiv_id": "2412.16643",
+    "code_url": null,
+    "summary": "Retrieves historically similar sequences using dynamic time warping and inserts the retrieved examples into prompts for an LLM-based time-series forecaster.",
+    "sources": [
+      "https://ieeexplore.ieee.org/document/10889933",
+      "https://arxiv.org/abs/2412.16643",
+      "https://ieeexplore.ieee.org/abstract/document/10889933/metrics"
+    ],
+    "venue_source_url": "https://ieeexplore.ieee.org/abstract/document/10889933/metrics",
+    "caveat": "The Yang et al. ICASSP 2025 paper is distinct from the similarly named OpenReview submission by Xiao et al.; no repository is inferred from that namesake.",
+    "source_platforms": [
+      "ieeexplore.ieee.org",
+      "arxiv.org"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_count": null,
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass.",
+      "code_url": "No verified author-linked implementation repository recorded in this snapshot."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "ieeexplore.ieee.org",
+          "source_url": "https://ieeexplore.ieee.org/abstract/document/10889933/metrics",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ]
+    },
+    "year_basis": "Earliest public paper year located in the cited sources; earlier releases may exist.",
+    "resource_type": null
+  },
+  {
+    "id": "llmtime",
+    "category": "direct",
+    "title": "Large Language Models Are Zero-Shot Time Series Forecasters",
+    "authors": [
+      "Nate Gruver",
+      "Marc Finzi",
+      "Shikai Qiu",
+      "Andrew Gordon Wilson"
+    ],
+    "year": 2023,
+    "venue": "NeurIPS 2023",
+    "paper_url": "https://arxiv.org/abs/2310.07820",
+    "arxiv_id": "2310.07820",
+    "code_url": "https://github.com/ngruver/llmtime",
+    "summary": "Serializes scaled observations into digit strings and uses an unchanged autoregressive language model to produce probabilistic numerical continuations.",
+    "sources": [
+      "https://arxiv.org/abs/2310.07820",
+      "https://proceedings.neurips.cc/paper_files/paper/2023/file/3eb7ca52e8207697361b2c0fb3926511-Paper-Conference.pdf",
+      "https://github.com/ngruver/llmtime"
+    ],
+    "venue_source_url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/3eb7ca52e8207697361b2c0fb3926511-Paper-Conference.pdf",
+    "first_public_date": "2023-10-11",
+    "caveat": "Zero-shot refers to no downstream parameter updates; model choice, scaling, tokenization and API model availability affect performance.",
+    "citation_count": null,
+    "citation_count_note": "Not collected; no unsupported or stale citation counts are supplied.",
+    "pdf_status": "Not downloaded; canonical source provides a PDF link.",
+    "source_platforms": [
+      "arxiv.org",
+      "proceedings.neurips.cc",
+      "github.com"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "proceedings.neurips.cc",
+          "source_url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/3eb7ca52e8207697361b2c0fb3926511-Paper-Conference.pdf",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ],
+      "code_url": [
+        {
+          "platform": "github.com",
+          "source_url": "https://github.com/ngruver/llmtime",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text",
+          "note": "Author association checked against the cited paper or author project; the link alone does not establish implementation completeness."
+        }
+      ]
+    },
+    "year_basis": "First public date in the cited paper record: 2023-10-11",
+    "resource_type": "author-linked repository"
+  },
+  {
+    "id": "promptcast",
+    "category": "direct",
+    "title": "PromptCast: A New Prompt-Based Learning Paradigm for Time Series Forecasting",
+    "authors": [
+      "Hao Xue",
+      "Flora D. Salim"
+    ],
+    "year": 2022,
+    "venue": "IEEE TKDE 2024 (online publication December 2023)",
+    "paper_url": "https://arxiv.org/abs/2210.08964",
+    "arxiv_id": "2210.08964",
+    "code_url": "https://github.com/cruiseresearchgroup/PISA-PromptCast",
+    "summary": "Expresses numerical forecasting inputs and targets as natural-language sentences and adapts pretrained text generation models to the resulting sentence-to-sentence task.",
+    "sources": [
+      "https://arxiv.org/abs/2210.08964",
+      "https://ieeexplore.ieee.org/abstract/document/10356715",
+      "https://github.com/cruiseresearchgroup/PISA-PromptCast"
+    ],
+    "venue_source_url": "https://ieeexplore.ieee.org/abstract/document/10356715",
+    "first_public_date": "2022-09-20",
+    "doi": "10.1109/TKDE.2023.3342137",
+    "caveat": "Foundational pretrained language-model work; not restricted to modern decoder-only LLMs. Repository calls it TKDE2023, while the journal volume is 2024; preserve both dates.",
+    "citation_count": null,
+    "citation_count_note": "Not collected; no unsupported or stale citation counts are supplied.",
+    "pdf_status": "Not downloaded; canonical source provides a PDF link.",
+    "source_platforms": [
+      "arxiv.org",
+      "ieeexplore.ieee.org",
+      "github.com"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "ieeexplore.ieee.org",
+          "source_url": "https://ieeexplore.ieee.org/abstract/document/10356715",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ],
+      "code_url": [
+        {
+          "platform": "github.com",
+          "source_url": "https://github.com/cruiseresearchgroup/PISA-PromptCast",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text",
+          "note": "Author association checked against the cited paper or author project; the link alone does not establish implementation completeness."
+        }
+      ]
+    },
+    "year_basis": "First public date in the cited paper record: 2022-09-20",
+    "resource_type": "author-linked repository"
+  },
+  {
+    "id": "imrouter",
+    "category": "adaptation",
+    "title": "IMRouter: Imbalance-aware Temporal Pattern Routing for LLM-based Time Series Forecasting",
+    "authors": [
+      "Yang, Xin",
+      "Xu, Cai",
+      "Chen, Haishun",
+      "Liu, Ying",
+      "Zhao, Jie",
+      "Zhao, Wei",
+      "Guan, Ziyu"
+    ],
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "paper_url": "https://arxiv.org/abs/2610.39246",
+    "arxiv_id": "2610.39246",
+    "code_url": null,
+    "summary": "Uses pattern-adaptive expert routing and routing-guided semantic alignment to address imbalanced temporal patterns.",
+    "sources": [
+      "https://arxiv.org/abs/2610.39246"
+    ],
+    "venue_source_url": "https://arxiv.org/abs/2610.39246",
+    "source_platforms": [
+      "arxiv.org"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_count": null,
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass.",
+      "code_url": "No verified author-linked implementation repository recorded in this snapshot."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "arxiv.org",
+          "source_url": "https://arxiv.org/abs/2610.39246",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ]
+    },
+    "year_basis": "Earliest public paper year located in the cited sources; earlier releases may exist.",
+    "resource_type": null
+  },
+  {
+    "id": "lagllm",
+    "category": "adaptation",
+    "title": "LagLLM: LLM-empowered lead–lag dependency learning for spatial-temporal time series forecasting",
+    "authors": [
+      "Binqing Wu",
+      "Jian Zhou",
+      "Zongjiang Shang",
+      "Ling Chen"
+    ],
+    "year": 2026,
+    "venue": "ICML 2026",
+    "paper_url": "https://proceedings.mlr.press/v306/wu26ci.html",
+    "arxiv_id": null,
+    "code_url": "https://github.com/w2obin/LagLLM-2026",
+    "summary": "Builds a lead–lag graph using spatial information, learned dynamics and frozen-LLM reasoning, then sorts tokens structurally for a fine-tuned language-model forecaster.",
+    "sources": [
+      "https://proceedings.mlr.press/v306/wu26ci.html",
+      "https://github.com/w2obin/LagLLM-2026"
+    ],
+    "venue_source_url": "https://proceedings.mlr.press/v306/wu26ci.html",
+    "year_basis": "Earliest verified conference publication; no earlier preprint found.",
+    "caveat": "Spatial-temporal specialization rather than a generic univariate-only benchmark. The official repository is paper-linked and contains src/scripts/logs despite a minimal README.",
+    "citation_count": null,
+    "citation_count_note": "Not collected; no unsupported or stale citation counts are supplied.",
+    "pdf_status": "Not downloaded; canonical source provides a PDF link.",
+    "source_platforms": [
+      "proceedings.mlr.press",
+      "github.com"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "proceedings.mlr.press",
+          "source_url": "https://proceedings.mlr.press/v306/wu26ci.html",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ],
+      "code_url": [
+        {
+          "platform": "github.com",
+          "source_url": "https://github.com/w2obin/LagLLM-2026",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text",
+          "note": "Author association checked against the cited paper or author project; the link alone does not establish implementation completeness."
+        }
+      ]
+    },
+    "resource_type": "author-linked repository"
+  },
+  {
+    "id": "m3time",
+    "category": "adaptation",
+    "title": "M3Time: LLM-Enhanced Multi-Modal, Multi-Scale, and Multi-Frequency Multivariate Time Series Forecasting",
+    "authors": [
+      "Shuning Jia",
+      "Baijun Song",
+      "Canming Ye",
+      "Chun Yuan"
+    ],
+    "year": 2026,
+    "venue": "AAAI 2026",
+    "paper_url": "https://ojs.aaai.org/index.php/AAAI/article/view/39383",
+    "arxiv_id": null,
+    "code_url": null,
+    "summary": "Combines multi-scale and multi-frequency numerical representations with language-model semantic priors, using an adaptive mixture of L1 and L2 losses for forecasting.",
+    "sources": [
+      "https://ojs.aaai.org/index.php/AAAI/article/view/39383",
+      "https://ojs.aaai.org/index.php/AAAI/article/download/39383/43344",
+      "https://api.crossref.org/works/10.1609/aaai.v40i27.39383"
+    ],
+    "venue_source_url": "https://ojs.aaai.org/index.php/AAAI/article/view/39383",
+    "first_public_date": "2026-03-14",
+    "doi": "10.1609/aaai.v40i27.39383",
+    "year_basis": "Earliest verified paper publication, not proof that no earlier preprint exists.",
+    "caveat": "AAAI HTML/PDF sometimes return bot protection; publisher search index and publisher-deposited Crossref metadata independently confirm title/authors/venue. No author-linked code verified.",
+    "citation_count": null,
+    "citation_count_note": "Not collected; no unsupported or stale citation counts are supplied.",
+    "pdf_status": "Not downloaded; canonical source provides a PDF link.",
+    "source_platforms": [
+      "ojs.aaai.org",
+      "api.crossref.org"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass.",
+      "code_url": "No verified author-linked implementation repository recorded in this snapshot."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "ojs.aaai.org",
+          "source_url": "https://ojs.aaai.org/index.php/AAAI/article/view/39383",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ]
+    },
+    "resource_type": null
+  },
+  {
+    "id": "tf-llm",
+    "category": "adaptation",
+    "title": "TF-LLM: Enhanced time series analysis with time-frequency large language models",
+    "authors": [
+      "Yuhang Zhang",
+      "Zitong Yu",
+      "Mingtong Dai",
+      "Yue Sun",
+      "Tao Tan"
+    ],
+    "year": 2026,
+    "venue": "Neural Networks 2026",
+    "paper_url": "https://doi.org/10.1016/j.neunet.2026.108687",
+    "arxiv_id": null,
+    "code_url": null,
+    "summary": "Integrates local time-domain and periodic frequency-domain features with pretrained language models and contextual prompts for forecasting and other time-series tasks.",
+    "sources": [
+      "https://doi.org/10.1016/j.neunet.2026.108687",
+      "https://www.sciencedirect.com/science/article/pii/S0893608026001498",
+      "https://api.crossref.org/works/10.1016/j.neunet.2026.108687",
+      "https://pubmed.ncbi.nlm.nih.gov/41707482/"
+    ],
+    "venue_source_url": "https://www.sciencedirect.com/science/article/pii/S0893608026001498",
+    "first_public_date": "2026-02-09",
+    "doi": "10.1016/j.neunet.2026.108687",
+    "year_basis": "Online publication date corroborated by PubMed; July 2026 journal volume.",
+    "caveat": "Multi-task scope includes forecasting, imputation, anomaly detection and classification. The publisher abstract and experiment snippet give inconsistent dataset counts; do not repeat a count. No author-linked code verified. Distinct from Explainable Traffic Flow Prediction with Large Language Models, also called TF-LLM elsewhere.",
+    "citation_count": null,
+    "citation_count_note": "Not collected; no unsupported or stale citation counts are supplied.",
+    "pdf_status": "Publisher record verified; open full text not downloaded.",
+    "source_platforms": [
+      "doi.org",
+      "www.sciencedirect.com",
+      "api.crossref.org",
+      "pubmed.ncbi.nlm.nih.gov"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass.",
+      "code_url": "No verified author-linked implementation repository recorded in this snapshot."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "www.sciencedirect.com",
+          "source_url": "https://www.sciencedirect.com/science/article/pii/S0893608026001498",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ]
+    },
+    "resource_type": null
+  },
+  {
+    "id": "timemra",
+    "category": "adaptation",
+    "title": "TimeMRA: LLM-Empowered Time Series Forecasting via Multi-Scale Retrieval-Augmented Representations",
+    "authors": [
+      "Zongjiang Shang",
+      "Chengxi Jin",
+      "Binqing Wu",
+      "Dongliang Cui",
+      "Yue Yu",
+      "Haobang Sun",
+      "Chuanlin Xu",
+      "Ling Chen"
+    ],
+    "year": 2026,
+    "venue": "ICML 2026",
+    "paper_url": "https://proceedings.mlr.press/v306/shang26b.html",
+    "arxiv_id": null,
+    "code_url": "https://github.com/shangzongjiang/TimeMRA",
+    "summary": "Creates multiscale LLM prompt embeddings, disentangles and routes relevant scales, and retrieves cross-modal representations to improve forecasts.",
+    "sources": [
+      "https://proceedings.mlr.press/v306/shang26b.html",
+      "https://github.com/shangzongjiang/TimeMRA"
+    ],
+    "venue_source_url": "https://proceedings.mlr.press/v306/shang26b.html",
+    "source_platforms": [
+      "proceedings.mlr.press",
+      "github.com"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_count": null,
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "proceedings.mlr.press",
+          "source_url": "https://proceedings.mlr.press/v306/shang26b.html",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ],
+      "code_url": [
+        {
+          "platform": "github.com",
+          "source_url": "https://github.com/shangzongjiang/TimeMRA",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text",
+          "note": "Author association checked against the cited paper or author project; the link alone does not establish implementation completeness."
+        }
+      ]
+    },
+    "year_basis": "Earliest public paper year located in the cited sources; earlier releases may exist.",
+    "resource_type": "author-linked repository"
+  },
+  {
+    "id": "timesaf",
+    "category": "adaptation",
+    "title": "TimeSAF: Towards LLM-Guided Semantic Asynchronous Fusion for Time Series Forecasting",
+    "authors": [
+      "Fan Zhang",
+      "Shiming Fan",
+      "Hua Wang"
+    ],
+    "year": 2026,
+    "venue": "ACL 2026",
+    "paper_url": "https://aclanthology.org/2026.acl-long.1208/",
+    "arxiv_id": "2604.12648",
+    "code_url": null,
+    "summary": "Separates numerical and prompt feature learning, then asynchronously returns aggregated high-level LLM semantics to the numerical forecasting backbone.",
+    "sources": [
+      "https://aclanthology.org/2026.acl-long.1208/",
+      "https://aclanthology.org/2026.acl-long.1208.pdf"
+    ],
+    "venue_source_url": "https://aclanthology.org/2026.acl-long.1208/",
+    "source_platforms": [
+      "aclanthology.org"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_count": null,
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass.",
+      "code_url": "No verified author-linked implementation repository recorded in this snapshot."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "aclanthology.org",
+          "source_url": "https://aclanthology.org/2026.acl-long.1208/",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ]
+    },
+    "year_basis": "Earliest public paper year located in the cited sources; earlier releases may exist.",
+    "resource_type": null
+  },
+  {
+    "id": "time-llama",
+    "category": "adaptation",
+    "title": "Time-LlaMA: Adapting Large Language Models for Time Series Modeling via Dynamic Low-rank Adaptation",
+    "authors": [
+      "Juyuan Zhang",
+      "Jiechao Gao",
+      "Wenwen Ouyang",
+      "Wei Zhu",
+      "Hui Yi Leong"
+    ],
+    "year": 2025,
+    "venue": "ACL 2025 Student Research Workshop",
+    "paper_url": "https://aclanthology.org/2025.acl-srw.90/",
+    "arxiv_id": "2502.13725",
+    "code_url": null,
+    "summary": "Aligns numerical channel tokens with text prompts and uses an input-dependent selection of low-rank adaptation modules within the pretrained language-model backbone.",
+    "sources": [
+      "https://aclanthology.org/2025.acl-srw.90/",
+      "https://arxiv.org/abs/2502.13725",
+      "https://aclanthology.org/2025.acl-srw.90.pdf"
+    ],
+    "venue_source_url": "https://aclanthology.org/2025.acl-srw.90/",
+    "first_public_date": "2025-02-19",
+    "doi": "10.18653/v1/2025.acl-srw.90",
+    "caveat": "The initial three-author arXiv version has a different title and author list; metadata here follows the final five-author ACL SRW paper. It is not ACL main track. No author-linked released code verified.",
+    "citation_count": null,
+    "citation_count_note": "Not collected; no unsupported or stale citation counts are supplied.",
+    "pdf_status": "Not downloaded; canonical source provides a PDF link.",
+    "source_platforms": [
+      "aclanthology.org",
+      "arxiv.org"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass.",
+      "code_url": "No verified author-linked implementation repository recorded in this snapshot."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "aclanthology.org",
+          "source_url": "https://aclanthology.org/2025.acl-srw.90/",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ]
+    },
+    "year_basis": "First public date in the cited paper record: 2025-02-19",
+    "resource_type": null
+  },
+  {
+    "id": "autotimes",
+    "category": "adaptation",
+    "title": "AutoTimes: Autoregressive Time Series Forecasters via Large Language Models",
+    "authors": [
+      "Yong Liu",
+      "Guo Qin",
+      "Xiangdong Huang",
+      "Jianmin Wang",
+      "Mingsheng Long"
+    ],
+    "year": 2024,
+    "venue": "NeurIPS 2024",
+    "paper_url": "https://arxiv.org/abs/2402.02370",
+    "arxiv_id": "2402.02370",
+    "code_url": "https://github.com/thuml/AutoTimes",
+    "summary": "Maps time-series segments into a frozen decoder-only language-model embedding space and preserves autoregressive next-segment generation, with timestamp embeddings and in-context forecasting.",
+    "sources": [
+      "https://arxiv.org/abs/2402.02370",
+      "https://proceedings.neurips.cc/paper_files/paper/2024/file/dcf88cbc8d01ce7309b83d0ebaeb9d29-Paper-Conference.pdf",
+      "https://github.com/thuml/AutoTimes"
+    ],
+    "venue_source_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/dcf88cbc8d01ce7309b83d0ebaeb9d29-Paper-Conference.pdf",
+    "first_public_date": "2024-02-04",
+    "caveat": "In-context examples and lightweight adapter training are separate components; the frozen backbone does not make the full system training-free.",
+    "citation_count": null,
+    "citation_count_note": "Not collected; no unsupported or stale citation counts are supplied.",
+    "pdf_status": "Not downloaded; canonical source provides a PDF link.",
+    "source_platforms": [
+      "arxiv.org",
+      "proceedings.neurips.cc",
+      "github.com"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "proceedings.neurips.cc",
+          "source_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/dcf88cbc8d01ce7309b83d0ebaeb9d29-Paper-Conference.pdf",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ],
+      "code_url": [
+        {
+          "platform": "github.com",
+          "source_url": "https://github.com/thuml/AutoTimes",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text",
+          "note": "Author association checked against the cited paper or author project; the link alone does not establish implementation completeness."
+        }
+      ]
+    },
+    "year_basis": "First public date in the cited paper record: 2024-02-04",
+    "resource_type": "author-linked repository"
+  },
+  {
+    "id": "calf",
+    "category": "adaptation",
+    "title": "CALF: Aligning LLMs for Time Series Forecasting via Cross-modal Fine-Tuning",
+    "authors": [
+      "Peiyuan Liu",
+      "Hang Guo",
+      "Tao Dai",
+      "Naiqi Li",
+      "Jigang Bao",
+      "Xudong Ren",
+      "Yong Jiang",
+      "Shu-Tao Xia"
+    ],
+    "year": 2024,
+    "venue": "AAAI 2025",
+    "paper_url": "https://arxiv.org/abs/2403.07300",
+    "arxiv_id": "2403.07300",
+    "code_url": "https://github.com/Hank0626/CALF",
+    "summary": "Fine-tunes temporal and text-aligned branches using input matching, intermediate-feature regularization and output consistency to reduce the language–time-series distribution gap.",
+    "sources": [
+      "https://arxiv.org/abs/2403.07300",
+      "https://ojs.aaai.org/index.php/AAAI/article/download/34082/36237",
+      "https://github.com/Hank0626/CALF"
+    ],
+    "venue_source_url": "https://ojs.aaai.org/index.php/AAAI/article/download/34082/36237",
+    "first_public_date": "2024-03-12",
+    "caveat": "The paper-linked Hank0626/LLaTA repository redirects to Hank0626/CALF; this is the same work, so do not create a second LLaTA entry.",
+    "citation_count": null,
+    "citation_count_note": "Not collected; no unsupported or stale citation counts are supplied.",
+    "pdf_status": "Not downloaded; canonical source provides a PDF link.",
+    "source_platforms": [
+      "arxiv.org",
+      "ojs.aaai.org",
+      "github.com"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "ojs.aaai.org",
+          "source_url": "https://ojs.aaai.org/index.php/AAAI/article/download/34082/36237",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ],
+      "code_url": [
+        {
+          "platform": "github.com",
+          "source_url": "https://github.com/Hank0626/CALF",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text",
+          "note": "Author association checked against the cited paper or author project; the link alone does not establish implementation completeness."
+        }
+      ]
+    },
+    "year_basis": "First public date in the cited paper record: 2024-03-12",
+    "resource_type": "author-linked repository"
+  },
+  {
+    "id": "s2ip-llm",
+    "category": "adaptation",
+    "title": "S²IP-LLM: Semantic Space Informed Prompt Learning with LLM for Time Series Forecasting",
+    "authors": [
+      "Zijie Pan",
+      "Yushan Jiang",
+      "Sahil Garg",
+      "Anderson Schneider",
+      "Yuriy Nevmyvaka",
+      "Dongjin Song"
+    ],
+    "year": 2024,
+    "venue": "ICML 2024",
+    "paper_url": "https://proceedings.mlr.press/v235/pan24c.html",
+    "arxiv_id": "2403.05798",
+    "code_url": "https://github.com/panzijie825/S2IP-LLM",
+    "summary": "Aligns embeddings of decomposed time-series patches with semantic anchors from pretrained word embeddings and retrieves relevant anchors as forecasting prompts.",
+    "sources": [
+      "https://proceedings.mlr.press/v235/pan24c.html",
+      "https://arxiv.org/abs/2403.05798",
+      "https://raw.githubusercontent.com/mlresearch/v235/main/assets/pan24c/pan24c.pdf",
+      "https://github.com/panzijie825/S2IP-LLM"
+    ],
+    "venue_source_url": "https://proceedings.mlr.press/v235/pan24c.html",
+    "first_public_date": "2024-03-09",
+    "caveat": "Semantic anchors are learned alignment constructs; the method does not require external event text at prediction time.",
+    "citation_count": null,
+    "citation_count_note": "Not collected; no unsupported or stale citation counts are supplied.",
+    "pdf_status": "Not downloaded; canonical source provides a PDF link.",
+    "source_platforms": [
+      "proceedings.mlr.press",
+      "arxiv.org",
+      "raw.githubusercontent.com",
+      "github.com"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "proceedings.mlr.press",
+          "source_url": "https://proceedings.mlr.press/v235/pan24c.html",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ],
+      "code_url": [
+        {
+          "platform": "github.com",
+          "source_url": "https://github.com/panzijie825/S2IP-LLM",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text",
+          "note": "Author association checked against the cited paper or author project; the link alone does not establish implementation completeness."
+        }
+      ]
+    },
+    "year_basis": "First public date in the cited paper record: 2024-03-09",
+    "resource_type": "author-linked repository"
+  },
+  {
+    "id": "timecma",
+    "category": "adaptation",
+    "title": "TimeCMA: Towards LLM-Empowered Multivariate Time Series Forecasting via Cross-Modality Alignment",
+    "authors": [
+      "Chenxi Liu",
+      "Qianxiong Xu",
+      "Hao Miao",
+      "Sun Yang",
+      "Lingzheng Zhang",
+      "Cheng Long",
+      "Ziyue Li",
+      "Rui Zhao"
+    ],
+    "year": 2024,
+    "venue": "AAAI 2025",
+    "paper_url": "https://arxiv.org/abs/2406.01638",
+    "arxiv_id": "2406.01638",
+    "code_url": "https://github.com/ChenxiLiu-HNU/TimeCMA",
+    "summary": "Aligns a numerical time-series branch with frozen-LLM prompt embeddings and caches last-token language features to reduce downstream forecasting cost.",
+    "sources": [
+      "https://arxiv.org/abs/2406.01638",
+      "https://ojs.aaai.org/index.php/AAAI/article/download/34067/36222",
+      "https://github.com/ChenxiLiu-HNU/TimeCMA"
+    ],
+    "venue_source_url": "https://ojs.aaai.org/index.php/AAAI/article/download/34067/36222",
+    "first_public_date": "2024-06-03",
+    "caveat": "Prompt embeddings encode textualized versions of the observed numerical series; they are not independently observed external text.",
+    "citation_count": null,
+    "citation_count_note": "Not collected; no unsupported or stale citation counts are supplied.",
+    "pdf_status": "Not downloaded; canonical source provides a PDF link.",
+    "source_platforms": [
+      "arxiv.org",
+      "ojs.aaai.org",
+      "github.com"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "ojs.aaai.org",
+          "source_url": "https://ojs.aaai.org/index.php/AAAI/article/download/34067/36222",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ],
+      "code_url": [
+        {
+          "platform": "github.com",
+          "source_url": "https://github.com/ChenxiLiu-HNU/TimeCMA",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text",
+          "note": "Author association checked against the cited paper or author project; the link alone does not establish implementation completeness."
+        }
+      ]
+    },
+    "year_basis": "First public date in the cited paper record: 2024-06-03",
+    "resource_type": "author-linked repository"
+  },
+  {
+    "id": "gpt4ts",
+    "category": "adaptation",
+    "title": "One Fits All: Power General Time Series Analysis by Pretrained LM",
+    "authors": [
+      "Tian Zhou",
+      "Peisong Niu",
+      "Xue Wang",
+      "Liang Sun",
+      "Rong Jin"
+    ],
+    "year": 2023,
+    "venue": "NeurIPS 2023",
+    "paper_url": "https://arxiv.org/abs/2302.11939",
+    "arxiv_id": "2302.11939",
+    "code_url": "https://github.com/DAMO-DI-ML/NeurIPS2023-One-Fits-All",
+    "summary": "Adapts pretrained GPT-2 representations for numerical time-series tasks using trainable input/output components while freezing self-attention and feed-forward blocks.",
+    "sources": [
+      "https://arxiv.org/abs/2302.11939",
+      "https://papers.nips.cc/paper/2023/file/86c17de05579cde52025f9984e6e2ebb-Paper-Conference.pdf",
+      "https://github.com/DAMO-DI-ML/NeurIPS2023-One-Fits-All"
+    ],
+    "venue_source_url": "https://papers.nips.cc/paper/2023/file/86c17de05579cde52025f9984e6e2ebb-Paper-Conference.pdf",
+    "first_public_date": "2023-02-23",
+    "caveat": "The broader paper also studies vision-pretrained models and non-forecasting tasks; GPT4TS is the relevant language-backbone forecaster. Old One_Fits_All URL redirects to this canonical repository.",
+    "citation_count": null,
+    "citation_count_note": "Not collected; no unsupported or stale citation counts are supplied.",
+    "pdf_status": "Not downloaded; canonical source provides a PDF link.",
+    "source_platforms": [
+      "arxiv.org",
+      "papers.nips.cc",
+      "github.com"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "papers.nips.cc",
+          "source_url": "https://papers.nips.cc/paper/2023/file/86c17de05579cde52025f9984e6e2ebb-Paper-Conference.pdf",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ],
+      "code_url": [
+        {
+          "platform": "github.com",
+          "source_url": "https://github.com/DAMO-DI-ML/NeurIPS2023-One-Fits-All",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text",
+          "note": "Author association checked against the cited paper or author project; the link alone does not establish implementation completeness."
+        }
+      ]
+    },
+    "year_basis": "First public date in the cited paper record: 2023-02-23",
+    "resource_type": "author-linked repository"
+  },
+  {
+    "id": "llm4ts",
+    "category": "adaptation",
+    "title": "LLM4TS: Aligning Pre-Trained LLMs as Data-Efficient Time-Series Forecasters",
+    "authors": [
+      "Ching Chang",
+      "Wei-Yao Wang",
+      "Wen-Chih Peng",
+      "Tien-Fu Chen"
+    ],
+    "year": 2023,
+    "venue": "ACM TIST 2025",
+    "paper_url": "https://arxiv.org/abs/2308.08469",
+    "arxiv_id": "2308.08469",
+    "code_url": "https://github.com/blacksnail789521/LLM4TS",
+    "summary": "Uses a time-series alignment stage followed by forecasting fine-tuning, with two-level aggregation to incorporate multi-scale temporal information into a pretrained language model.",
+    "sources": [
+      "https://arxiv.org/abs/2308.08469",
+      "https://doi.org/10.1145/3719207",
+      "https://api.crossref.org/works/10.1145/3719207",
+      "https://github.com/blacksnail789521/LLM4TS"
+    ],
+    "venue_source_url": "https://doi.org/10.1145/3719207",
+    "first_public_date": "2023-08-16",
+    "doi": "10.1145/3719207",
+    "caveat": "The preprint initially circulated in 2023; the verified final journal is ACM TIST 2025, not an inferred conference acceptance.",
+    "citation_count": null,
+    "citation_count_note": "Not collected; no unsupported or stale citation counts are supplied.",
+    "pdf_status": "Not downloaded; canonical source provides a PDF link.",
+    "source_platforms": [
+      "arxiv.org",
+      "doi.org",
+      "api.crossref.org",
+      "github.com"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "doi.org",
+          "source_url": "https://doi.org/10.1145/3719207",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ],
+      "code_url": [
+        {
+          "platform": "github.com",
+          "source_url": "https://github.com/blacksnail789521/LLM4TS",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text",
+          "note": "Author association checked against the cited paper or author project; the link alone does not establish implementation completeness."
+        }
+      ]
+    },
+    "year_basis": "First public date in the cited paper record: 2023-08-16",
+    "resource_type": "author-linked repository"
+  },
+  {
+    "id": "tempo",
+    "category": "adaptation",
+    "title": "TEMPO: Prompt-based Generative Pre-trained Transformer for Time Series Forecasting",
+    "authors": [
+      "Defu Cao",
+      "Furong Jia",
+      "Sercan Ö. Arık",
+      "Tomas Pfister",
+      "Yixiang Zheng",
+      "Wen Ye",
+      "Yan Liu"
+    ],
+    "year": 2023,
+    "venue": "ICLR 2024",
+    "paper_url": "https://arxiv.org/abs/2310.04948",
+    "arxiv_id": "2310.04948",
+    "code_url": "https://github.com/DC-research/TEMPO",
+    "summary": "Adapts a pretrained language-model backbone using trend/seasonal/residual decomposition and component-specific prompts to support cross-domain forecasting.",
+    "sources": [
+      "https://arxiv.org/abs/2310.04948",
+      "https://openreview.net/pdf?id=YH5w12OUuU",
+      "https://arxiv.org/html/2310.04948v3",
+      "https://github.com/DC-research/TEMPO"
+    ],
+    "venue_source_url": "https://openreview.net/pdf?id=YH5w12OUuU",
+    "first_public_date": "2023-10-08",
+    "caveat": "Paper source links DC-research/TEMPO; do not substitute the similarly named Hugging Face organization or unrelated TEMPO papers.",
+    "citation_count": null,
+    "citation_count_note": "Not collected; no unsupported or stale citation counts are supplied.",
+    "pdf_status": "Not downloaded; canonical source provides a PDF link.",
+    "source_platforms": [
+      "arxiv.org",
+      "openreview.net",
+      "github.com"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "openreview.net",
+          "source_url": "https://openreview.net/pdf?id=YH5w12OUuU",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ],
+      "code_url": [
+        {
+          "platform": "github.com",
+          "source_url": "https://github.com/DC-research/TEMPO",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text",
+          "note": "Author association checked against the cited paper or author project; the link alone does not establish implementation completeness."
+        }
+      ]
+    },
+    "year_basis": "First public date in the cited paper record: 2023-10-08",
+    "resource_type": "author-linked repository"
+  },
+  {
+    "id": "test",
+    "category": "adaptation",
+    "title": "TEST: Text Prototype Aligned Embedding to Activate LLM's Ability for Time Series",
+    "authors": [
+      "Chenxi Sun",
+      "Hongyan Li",
+      "Yaliang Li",
+      "Shenda Hong"
+    ],
+    "year": 2023,
+    "venue": "ICLR 2024",
+    "paper_url": "https://arxiv.org/abs/2308.08241",
+    "arxiv_id": "2308.08241",
+    "code_url": "https://github.com/SCXsunchenxi/TEST",
+    "summary": "Learns time-series embeddings with instance, feature and text-prototype contrastive objectives, then applies soft prompts and frozen language models to forecasting and other tasks.",
+    "sources": [
+      "https://arxiv.org/abs/2308.08241",
+      "https://arxiv.org/html/2308.08241v2",
+      "https://proceedings.iclr.cc/paper_files/paper/2024/hash/a4352e2c9d93582898a2a20e1f514e8f-Abstract-Conference.html",
+      "https://github.com/SCXsunchenxi/TEST"
+    ],
+    "venue_source_url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/a4352e2c9d93582898a2a20e1f514e8f-Abstract-Conference.html",
+    "first_public_date": "2023-08-16",
+    "caveat": "Multi-task time-series representation framework; forecasting is one evaluated downstream use, not its sole focus.",
+    "citation_count": null,
+    "citation_count_note": "Not collected; no unsupported or stale citation counts are supplied.",
+    "pdf_status": "Not downloaded; canonical source provides a PDF link.",
+    "source_platforms": [
+      "arxiv.org",
+      "proceedings.iclr.cc",
+      "github.com"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "proceedings.iclr.cc",
+          "source_url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/a4352e2c9d93582898a2a20e1f514e8f-Abstract-Conference.html",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ],
+      "code_url": [
+        {
+          "platform": "github.com",
+          "source_url": "https://github.com/SCXsunchenxi/TEST",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text",
+          "note": "Author association checked against the cited paper or author project; the link alone does not establish implementation completeness."
+        }
+      ]
+    },
+    "year_basis": "First public date in the cited paper record: 2023-08-16",
+    "resource_type": "author-linked repository"
+  },
+  {
+    "id": "time-llm",
+    "category": "adaptation",
+    "title": "Time-LLM: Time Series Forecasting by Reprogramming Large Language Models",
+    "authors": [
+      "Ming Jin",
+      "Shiyu Wang",
+      "Lintao Ma",
+      "Zhixuan Chu",
+      "James Y. Zhang",
+      "Xiaoming Shi",
+      "Pin-Yu Chen",
+      "Yuxuan Liang",
+      "Yuan-Fang Li",
+      "Shirui Pan",
+      "Qingsong Wen"
+    ],
+    "year": 2023,
+    "venue": "ICLR 2024",
+    "paper_url": "https://arxiv.org/abs/2310.01728",
+    "arxiv_id": "2310.01728",
+    "code_url": "https://github.com/KimMeen/Time-LLM",
+    "summary": "Maps numerical patches onto learned text-prototype embeddings and combines them with descriptive prefix prompts before a frozen language-model backbone.",
+    "sources": [
+      "https://arxiv.org/abs/2310.01728",
+      "https://proceedings.iclr.cc/paper_files/paper/2024/file/680b2a8135b9c71278a09cafb605869e-Paper-Conference.pdf",
+      "https://github.com/KimMeen/Time-LLM"
+    ],
+    "venue_source_url": "https://proceedings.iclr.cc/paper_files/paper/2024/file/680b2a8135b9c71278a09cafb605869e-Paper-Conference.pdf",
+    "first_public_date": "2023-10-03",
+    "caveat": "A frozen LLM backbone still requires supervised training of adaptation and forecasting components; this is not a training-free method.",
+    "citation_count": null,
+    "citation_count_note": "Not collected; no unsupported or stale citation counts are supplied.",
+    "pdf_status": "Not downloaded; canonical source provides a PDF link.",
+    "source_platforms": [
+      "arxiv.org",
+      "proceedings.iclr.cc",
+      "github.com"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "proceedings.iclr.cc",
+          "source_url": "https://proceedings.iclr.cc/paper_files/paper/2024/file/680b2a8135b9c71278a09cafb605869e-Paper-Conference.pdf",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ],
+      "code_url": [
+        {
+          "platform": "github.com",
+          "source_url": "https://github.com/KimMeen/Time-LLM",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text",
+          "note": "Author association checked against the cited paper or author project; the link alone does not establish implementation completeness."
+        }
+      ]
+    },
+    "year_basis": "First public date in the cited paper record: 2023-10-03",
+    "resource_type": "author-linked repository"
+  },
+  {
+    "id": "unitime",
+    "category": "adaptation",
+    "title": "UniTime: A Language-Empowered Unified Model for Cross-Domain Time Series Forecasting",
+    "authors": [
+      "Xu Liu",
+      "Junfeng Hu",
+      "Yuan Li",
+      "Shizhe Diao",
+      "Yuxuan Liang",
+      "Bryan Hooi",
+      "Roger Zimmermann"
+    ],
+    "year": 2023,
+    "venue": "The ACM Web Conference (WWW) 2024",
+    "paper_url": "https://arxiv.org/abs/2310.09751",
+    "arxiv_id": "2310.09751",
+    "code_url": "https://github.com/liuxu77/UniTime",
+    "summary": "Combines domain instructions, channel-independent time-series tokens and a language–time-series Transformer to train one forecaster across heterogeneous domains.",
+    "sources": [
+      "https://arxiv.org/abs/2310.09751",
+      "https://arxiv.org/html/2310.09751v3",
+      "https://doi.org/10.1145/3589334.3645434",
+      "https://api.crossref.org/works/10.1145/3589334.3645434",
+      "https://github.com/liuxu77/UniTime"
+    ],
+    "venue_source_url": "https://doi.org/10.1145/3589334.3645434",
+    "first_public_date": "2023-10-15",
+    "doi": "10.1145/3589334.3645434",
+    "caveat": "Cross-domain training and zero-shot transfer are distinct evaluation settings; avoid describing the whole method as training-free.",
+    "citation_count": null,
+    "citation_count_note": "Not collected; no unsupported or stale citation counts are supplied.",
+    "pdf_status": "Not downloaded; canonical source provides a PDF link.",
+    "source_platforms": [
+      "arxiv.org",
+      "doi.org",
+      "api.crossref.org",
+      "github.com"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "doi.org",
+          "source_url": "https://doi.org/10.1145/3589334.3645434",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ],
+      "code_url": [
+        {
+          "platform": "github.com",
+          "source_url": "https://github.com/liuxu77/UniTime",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text",
+          "note": "Author association checked against the cited paper or author project; the link alone does not establish implementation completeness."
+        }
+      ]
+    },
+    "year_basis": "First public date in the cited paper record: 2023-10-15",
+    "resource_type": "author-linked repository"
+  },
+  {
+    "id": "exotimer",
+    "category": "context",
+    "title": "ExoTimer: Leveraging Large Language Models for Time Series Forecasting with Exogenous Variables",
+    "authors": [
+      "Lan Wu",
+      "Xuebin Wang",
+      "Chenglong Ge",
+      "Ruijuan Chu",
+      "LinYu Wang"
+    ],
+    "year": 2026,
+    "venue": "AAAI 2026",
+    "paper_url": "https://ojs.aaai.org/index.php/AAAI/article/view/39908",
+    "arxiv_id": null,
+    "code_url": null,
+    "summary": "Combines an exogenous-aware numerical encoder, multi-attribute LLM prompts, and lightweight hash-space alignment to forecast endogenous variables using external covariates.",
+    "sources": [
+      "https://ojs.aaai.org/index.php/AAAI/article/view/39908",
+      "https://ojs.aaai.org/index.php/AAAI/article/download/39908/43869"
+    ],
+    "venue_source_url": "https://ojs.aaai.org/index.php/AAAI/article/view/39908",
+    "caveat": "No repository was inferred from secondary snippets mixing this title with the unrelated LeRet method.",
+    "source_platforms": [
+      "ojs.aaai.org"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_count": null,
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass.",
+      "code_url": "No verified author-linked implementation repository recorded in this snapshot."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "ojs.aaai.org",
+          "source_url": "https://ojs.aaai.org/index.php/AAAI/article/view/39908",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ]
+    },
+    "year_basis": "Earliest public paper year located in the cited sources; earlier releases may exist.",
+    "resource_type": null
+  },
+  {
+    "id": "vot",
+    "category": "context",
+    "title": "Unlocking the Value of Text: Event-Driven Reasoning and Multi-Level Alignment for Time Series Forecasting",
+    "authors": [
+      "Siyuan Wang",
+      "Peng Chen",
+      "Yihang Wang",
+      "Wanghui Qiu",
+      "Chenjuan Guo",
+      "Bin Yang",
+      "Yang Shu"
+    ],
+    "year": 2026,
+    "venue": "ICLR 2026",
+    "paper_url": "https://arxiv.org/abs/2603.15452",
+    "arxiv_id": "2603.15452",
+    "code_url": "https://github.com/decisionintelligence/VoT",
+    "summary": "Uses historical examples to guide LLM event reasoning and combines text-time-series representation alignment with frequency-level fusion of event-driven and numerical forecasts.",
+    "sources": [
+      "https://arxiv.org/abs/2603.15452",
+      "https://openreview.net/pdf/8542bcdfb88a3841aedc557da9e8d5acc406672c.pdf",
+      "https://github.com/decisionintelligence/VoT"
+    ],
+    "venue_source_url": "https://openreview.net/pdf/8542bcdfb88a3841aedc557da9e8d5acc406672c.pdf",
+    "source_platforms": [
+      "arxiv.org",
+      "openreview.net",
+      "github.com"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_count": null,
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "openreview.net",
+          "source_url": "https://openreview.net/pdf/8542bcdfb88a3841aedc557da9e8d5acc406672c.pdf",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ],
+      "code_url": [
+        {
+          "platform": "github.com",
+          "source_url": "https://github.com/decisionintelligence/VoT",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text",
+          "note": "Author association checked against the cited paper or author project; the link alone does not establish implementation completeness."
+        }
+      ]
+    },
+    "year_basis": "Earliest public paper year located in the cited sources; earlier releases may exist.",
+    "resource_type": "author-linked repository"
+  },
+  {
+    "id": "tokencast",
+    "category": "context",
+    "title": "From Values to Tokens: An LLM-Driven Framework for Context-Aware Time Series Forecasting via Symbolic Discretization",
+    "authors": [
+      "Xiaoyu Tao",
+      "Shilong Zhang",
+      "Mingyue Cheng",
+      "Daoyu Wang",
+      "Tingyue Pan",
+      "Bokai Pan",
+      "Changqing Zhang",
+      "Shijin Wang"
+    ],
+    "year": 2025,
+    "venue": "IJCAI 2026",
+    "paper_url": "https://ijcai.org/proceedings/2026/338",
+    "arxiv_id": "2508.09191",
+    "code_url": "https://github.com/ustc-time-series/TokenCast",
+    "summary": "Tokenizes continuous series into discrete symbols, aligns temporal and textual tokens in an LLM representation space, and generates future tokens that decode into numerical forecasts.",
+    "sources": [
+      "https://ijcai.org/proceedings/2026/338",
+      "https://arxiv.org/abs/2508.09191",
+      "https://github.com/ustc-time-series/TokenCast"
+    ],
+    "venue_source_url": "https://ijcai.org/proceedings/2026/338",
+    "caveat": "IJCAI 2026 publisher metadata takes precedence over the inconsistent AAAI citation in the repository.",
+    "doi": "10.24963/ijcai.2026/338",
+    "source_platforms": [
+      "ijcai.org",
+      "arxiv.org",
+      "github.com"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_count": null,
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "ijcai.org",
+          "source_url": "https://ijcai.org/proceedings/2026/338",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ],
+      "code_url": [
+        {
+          "platform": "github.com",
+          "source_url": "https://github.com/ustc-time-series/TokenCast",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text",
+          "note": "Author association checked against the cited paper or author project; the link alone does not establish implementation completeness."
+        }
+      ]
+    },
+    "year_basis": "Earliest public paper year located in the cited sources; earlier releases may exist.",
+    "resource_type": "author-linked repository"
+  },
+  {
+    "id": "gpt4mts",
+    "category": "context",
+    "title": "GPT4MTS: Prompt-based Large Language Model for Multimodal Time-series Forecasting",
+    "authors": [
+      "Furong Jia",
+      "Kevin Wang",
+      "Yixiang Zheng",
+      "Defu Cao",
+      "Yan Liu"
+    ],
+    "year": 2024,
+    "venue": "AAAI 2024",
+    "paper_url": "https://ojs.aaai.org/index.php/AAAI/article/view/30383",
+    "arxiv_id": null,
+    "code_url": "https://github.com/Flora-jia-jfr/GPT4MTS-Prompt-based-Large-Language-Model-for-Multimodal-Time-series-Forecasting",
+    "summary": "Combines numerical patches and text-derived soft prompts in a pretrained GPT-2 forecasting framework, supported by an LLM-assisted pipeline for collecting and summarizing GDELT news.",
+    "sources": [
+      "https://ojs.aaai.org/index.php/AAAI/article/view/30383",
+      "https://ojs.aaai.org/index.php/AAAI/article/download/30383/32447",
+      "https://github.com/Flora-jia-jfr/GPT4MTS-Prompt-based-Large-Language-Model-for-Multimodal-Time-series-Forecasting"
+    ],
+    "venue_source_url": "https://ojs.aaai.org/index.php/AAAI/citationstylelanguage/get/chicago-author-date?publicationId=28667&submissionId=30383",
+    "source_platforms": [
+      "ojs.aaai.org",
+      "github.com"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_count": null,
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "ojs.aaai.org",
+          "source_url": "https://ojs.aaai.org/index.php/AAAI/citationstylelanguage/get/chicago-author-date?publicationId=28667&submissionId=30383",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ],
+      "code_url": [
+        {
+          "platform": "github.com",
+          "source_url": "https://github.com/Flora-jia-jfr/GPT4MTS-Prompt-based-Large-Language-Model-for-Multimodal-Time-series-Forecasting",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text",
+          "note": "Author association checked against the cited paper or author project; the link alone does not establish implementation completeness."
+        }
+      ]
+    },
+    "year_basis": "Earliest public paper year located in the cited sources; earlier releases may exist.",
+    "resource_type": "author-linked repository"
+  },
+  {
+    "id": "news_to_forecast",
+    "category": "context",
+    "title": "From News to Forecast: Integrating Event Analysis in LLM-Based Time Series Forecasting with Reflection",
+    "authors": [
+      "Xinlei Wang",
+      "Maike Feng",
+      "Jing Qiu",
+      "Jinjin Gu",
+      "Junhua Zhao"
+    ],
+    "year": 2024,
+    "venue": "NeurIPS 2024",
+    "paper_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/6aef8bffb372096ee73d98da30119f89-Abstract-Conference.html",
+    "arxiv_id": "2409.17515",
+    "code_url": "https://github.com/daydreamer-amelia/From_News_to_Forecast",
+    "summary": "Uses LLM agents and iterative reflection to filter news and align relevant events with time-series behavior before fine-tuning an LLM to forecast numeric sequences.",
+    "sources": [
+      "https://proceedings.neurips.cc/paper_files/paper/2024/hash/6aef8bffb372096ee73d98da30119f89-Abstract-Conference.html",
+      "https://arxiv.org/abs/2409.17515",
+      "https://github.com/daydreamer-amelia/From_News_to_Forecast"
+    ],
+    "venue_source_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/6aef8bffb372096ee73d98da30119f89-Abstract-Conference.html",
+    "source_platforms": [
+      "proceedings.neurips.cc",
+      "arxiv.org",
+      "github.com"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_count": null,
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "proceedings.neurips.cc",
+          "source_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/6aef8bffb372096ee73d98da30119f89-Abstract-Conference.html",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ],
+      "code_url": [
+        {
+          "platform": "github.com",
+          "source_url": "https://github.com/daydreamer-amelia/From_News_to_Forecast",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text",
+          "note": "Author association checked against the cited paper or author project; the link alone does not establish implementation completeness."
+        }
+      ]
+    },
+    "year_basis": "Earliest public paper year located in the cited sources; earlier releases may exist.",
+    "resource_type": "author-linked repository"
+  },
+  {
+    "id": "time_vlm",
+    "category": "multimodal",
+    "title": "Time-VLM: Exploring Multimodal Vision-Language Models for Augmented Time Series Forecasting",
+    "authors": [
+      "Siru Zhong",
+      "Weilin Ruan",
+      "Ming Jin",
+      "Huan Li",
+      "Qingsong Wen",
+      "Yuxuan Liang"
+    ],
+    "year": 2025,
+    "venue": "ICML 2025",
+    "paper_url": "https://proceedings.mlr.press/v267/zhong25a.html",
+    "arxiv_id": "2502.04395",
+    "code_url": "https://github.com/CityMind-Lab/ICML25-TimeVLM",
+    "summary": "Fuses temporal memory-bank features with series-derived images and textual descriptions encoded by frozen vision-language models for forecasting.",
+    "sources": [
+      "https://proceedings.mlr.press/v267/zhong25a.html",
+      "https://arxiv.org/abs/2502.04395",
+      "https://github.com/CityMind-Lab/ICML25-TimeVLM"
+    ],
+    "venue_source_url": "https://proceedings.mlr.press/v267/zhong25a.html",
+    "source_platforms": [
+      "proceedings.mlr.press",
+      "arxiv.org",
+      "github.com"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_count": null,
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "proceedings.mlr.press",
+          "source_url": "https://proceedings.mlr.press/v267/zhong25a.html",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ],
+      "code_url": [
+        {
+          "platform": "github.com",
+          "source_url": "https://github.com/CityMind-Lab/ICML25-TimeVLM",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text",
+          "note": "Author association checked against the cited paper or author project; the link alone does not establish implementation completeness."
+        }
+      ]
+    },
+    "year_basis": "Earliest public paper year located in the cited sources; earlier releases may exist.",
+    "resource_type": "author-linked repository"
+  },
+  {
+    "id": "chattime",
+    "category": "multimodal",
+    "title": "ChatTime: A Unified Multimodal Time Series Foundation Model Bridging Numerical and Textual Data",
+    "authors": [
+      "Chengsen Wang",
+      "Qi Qi",
+      "Jingyu Wang",
+      "Haifeng Sun",
+      "Zirui Zhuang",
+      "Jinming Wu",
+      "Lei Zhang",
+      "Jianxin Liao"
+    ],
+    "year": 2024,
+    "venue": "AAAI 2025",
+    "paper_url": "https://arxiv.org/abs/2412.11376",
+    "arxiv_id": "2412.11376",
+    "code_url": "https://github.com/ForestsKing/ChatTime",
+    "summary": "Expands a pretrained LLM vocabulary with discretized numerical tokens and applies continued pretraining and instruction tuning for zero-shot and context-guided forecasting.",
+    "sources": [
+      "https://arxiv.org/abs/2412.11376",
+      "https://arxiv.org/html/2412.11376v1",
+      "https://github.com/ForestsKing/ChatTime",
+      "https://ojs.aaai.org/index.php/AAAI/article/view/33384"
+    ],
+    "venue_source_url": "https://ojs.aaai.org/index.php/AAAI/article/view/33384",
+    "doi": "10.1609/aaai.v39i12.33384",
+    "source_platforms": [
+      "arxiv.org",
+      "github.com",
+      "ojs.aaai.org"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_count": null,
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "ojs.aaai.org",
+          "source_url": "https://ojs.aaai.org/index.php/AAAI/article/view/33384",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ],
+      "code_url": [
+        {
+          "platform": "github.com",
+          "source_url": "https://github.com/ForestsKing/ChatTime",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text",
+          "note": "Author association checked against the cited paper or author project; the link alone does not establish implementation completeness."
+        }
+      ]
+    },
+    "year_basis": "Earliest public paper year located in the cited sources; earlier releases may exist.",
+    "resource_type": "author-linked repository"
+  },
+  {
+    "id": "castflow",
+    "category": "agent",
+    "title": "CastFlow: Bridging Evidence Acquisition and Accurate Prediction in Agentic Time Series Forecasting",
+    "authors": [
+      "Bokai Pan",
+      "Mingyue Cheng",
+      "Xiaoyu Tao",
+      "Zhiding Liu",
+      "Shuo Yu",
+      "Yuchong Wu",
+      "Qi Liu",
+      "Defu Lian",
+      "Enhong Chen"
+    ],
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "paper_url": "https://arxiv.org/abs/2604.27840",
+    "arxiv_id": "2604.27840",
+    "code_url": "https://github.com/Forever-Pan/CastFlow",
+    "summary": "Experience-guided tool planning gathers multi-view evidence, then a specialized LLM refines an ensemble forecast prior after supervised and verifiable-reward training.",
+    "sources": [
+      "https://arxiv.org/abs/2604.27840",
+      "https://arxiv.org/html/2604.27840v3",
+      "https://github.com/Forever-Pan/CastFlow"
+    ],
+    "venue_source_url": null,
+    "limitations": "Use the public arXiv version and its stated information boundary; a journal template label is not evidence of publication or acceptance.",
+    "scope": "core",
+    "verified_at": "2026-11-03",
+    "source_platforms": [
+      "arxiv.org",
+      "github.com"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_count": null,
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "arxiv.org",
+          "source_url": "https://arxiv.org/abs/2604.27840",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ],
+      "code_url": [
+        {
+          "platform": "github.com",
+          "source_url": "https://github.com/Forever-Pan/CastFlow",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text",
+          "note": "Author association checked against the cited paper or author project; the link alone does not establish implementation completeness."
+        }
+      ]
+    },
+    "year_basis": "Earliest public paper year located in the cited sources; earlier releases may exist.",
+    "publication_note": "arXiv preprint (2026); manuscript carries a VLDB Journal template label, with no publisher acceptance verified",
+    "resource_type": "author-linked repository"
+  },
+  {
+    "id": "castfsr",
+    "category": "agent",
+    "title": "CastFSR: A Fast--Slow--Reflect Agentic Reasoning Framework for Context-Aware Time Series Forecasting",
+    "authors": [
+      "Xiaoyu Tao",
+      "Mingyue Cheng",
+      "Bokai Pan",
+      "Chuang Jiang",
+      "Huanjian Zhang",
+      "Tian Gao",
+      "Yaguo Liu",
+      "Qi Liu",
+      "Enhong Chen"
+    ],
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "paper_url": "https://arxiv.org/abs/2608.03031",
+    "arxiv_id": "2608.03031",
+    "code_url": "https://github.com/Xiaoyu-Tao/CastFSR",
+    "summary": "A fast forecasting prior is combined with slow contextual-evidence reasoning and reflective revision, supporting both off-the-shelf LLM inference and compact-model distillation.",
+    "sources": [
+      "https://arxiv.org/abs/2608.03031",
+      "https://github.com/Xiaoyu-Tao/CastFSR"
+    ],
+    "venue_source_url": null,
+    "limitations": "Only the public August 2026 arXiv version and public code are used; no private manuscript configuration, metrics or later submission status is inferred.",
+    "scope": "core",
+    "verified_at": "2026-11-03",
+    "source_platforms": [
+      "arxiv.org",
+      "github.com"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_count": null,
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "arxiv.org",
+          "source_url": "https://arxiv.org/abs/2608.03031",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ],
+      "code_url": [
+        {
+          "platform": "github.com",
+          "source_url": "https://github.com/Xiaoyu-Tao/CastFSR",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text",
+          "note": "Author association checked against the cited paper or author project; the link alone does not establish implementation completeness."
+        }
+      ]
+    },
+    "year_basis": "Earliest public paper year located in the cited sources; earlier releases may exist.",
+    "resource_type": "author-linked repository"
+  },
+  {
+    "id": "chronoscribe",
+    "category": "agent",
+    "title": "ChronoScribe: Semantic-Numerical Specialization for Instruction-Driven Time Series Forecasting",
+    "authors": [
+      "Jiao, Yuchen",
+      "Zhang, Miao",
+      "Liu, Yuxuan",
+      "Li, Chengxi"
+    ],
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "paper_url": "https://arxiv.org/abs/2610.16345",
+    "arxiv_id": "2610.16345",
+    "code_url": null,
+    "summary": "Separates instruction interpretation and forecast configuration in an LLM from numerical quantile forecasting in a frozen time-series foundation model.",
+    "sources": [
+      "https://arxiv.org/abs/2610.16345"
+    ],
+    "venue_source_url": "https://arxiv.org/abs/2610.16345",
+    "source_platforms": [
+      "arxiv.org"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_count": null,
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass.",
+      "code_url": "No verified author-linked implementation repository recorded in this snapshot."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "arxiv.org",
+          "source_url": "https://arxiv.org/abs/2610.16345",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ]
+    },
+    "year_basis": "Earliest public paper year located in the cited sources; earlier releases may exist.",
+    "resource_type": null
+  },
+  {
+    "id": "ctrl",
+    "category": "agent",
+    "title": "CTRL: Control-Based Time Series Forecasting with LLM-Guided Residual Learning",
+    "authors": [
+      "Minkyoung Kim",
+      "Daeun Ji",
+      "Yohan Lee",
+      "Beomsoo Kim",
+      "Beakcheol Jang"
+    ],
+    "year": 2026,
+    "venue": "Findings of ACL 2026",
+    "paper_url": "https://aclanthology.org/2026.findings-acl.1104/",
+    "arxiv_id": "2609.23257",
+    "code_url": "https://github.com/mfriendly/CTRL",
+    "summary": "Specialized LLM controllers analyze decomposed forecast errors and emit compact control signals that a residual decoder turns into corrections to a frozen forecasting backbone.",
+    "sources": [
+      "https://aclanthology.org/2026.findings-acl.1104/",
+      "https://aclanthology.org/2026.findings-acl.1104.pdf",
+      "https://github.com/mfriendly/CTRL",
+      "https://api.github.com/repos/mfriendly/CTRL/contents"
+    ],
+    "venue_source_url": "https://aclanthology.org/2026.findings-acl.1104/",
+    "limitations": "The official paper explicitly links this repository and its README matches the exact title and ACL 2026 Findings, but the retrieved repository contains only a README promising a future code release; treat it as an author-linked placeholder, not available implementation code.",
+    "scope": "core",
+    "verified_at": "2026-11-03",
+    "code_status": "author-linked placeholder; implementation not released",
+    "source_platforms": [
+      "aclanthology.org",
+      "github.com",
+      "api.github.com"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_count": null,
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "aclanthology.org",
+          "source_url": "https://aclanthology.org/2026.findings-acl.1104/",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ],
+      "code_url": [
+        {
+          "platform": "github.com",
+          "source_url": "https://github.com/mfriendly/CTRL",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text",
+          "note": "Author association checked against the cited paper or author project; the link alone does not establish implementation completeness."
+        }
+      ]
+    },
+    "year_basis": "Earliest public paper year located in the cited sources; earlier releases may exist.",
+    "resource_type": "author-linked repository"
+  },
+  {
+    "id": "kairosagent",
+    "category": "agent",
+    "title": "KairosAgent: Agentic Time Series Forecasting with Fused Semantic Reasoning",
+    "authors": [
+      "Kun Feng",
+      "Ziwei Shan",
+      "Yuchen Fang",
+      "Yiyang Tan",
+      "Sihan Lu",
+      "Shuqi Gu",
+      "Xingyu Lu",
+      "Lintao Ma",
+      "Kan Ren"
+    ],
+    "year": 2026,
+    "venue": "EMNLP 2026 main conference",
+    "paper_url": "https://aclanthology.org/2026.emnlp-main.1343/",
+    "arxiv_id": "2605.30002",
+    "code_url": null,
+    "summary": "A tool-using LLM reasoner supplies semantic future-morphology guidance to a time-series foundation model, with forecasting-reward reinforcement learning and turn-level credit assignment.",
+    "sources": [
+      "https://aclanthology.org/2026.emnlp-main.1343/",
+      "https://aclanthology.org/2026.emnlp-main.1343.pdf",
+      "https://arxiv.org/abs/2605.30002",
+      "https://mldi.group/KairosAgent/"
+    ],
+    "venue_source_url": "https://aclanthology.org/2026.emnlp-main.1343/",
+    "limitations": "The official project page and paper were verified, but no implementation repository was linked in these retrieved sources, so code_url remains null.",
+    "scope": "core",
+    "verified_at": "2026-11-03",
+    "source_platforms": [
+      "aclanthology.org",
+      "arxiv.org",
+      "mldi.group"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_count": null,
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass.",
+      "code_url": "No verified author-linked implementation repository recorded in this snapshot."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "aclanthology.org",
+          "source_url": "https://aclanthology.org/2026.emnlp-main.1343/",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ]
+    },
+    "year_basis": "Earliest public paper year located in the cited sources; earlier releases may exist.",
+    "resource_type": null
+  },
+  {
+    "id": "llm_forecasting_planner",
+    "category": "agent",
+    "title": "LLM as Forecasting Planner: Training-Free Text Conditioning for Time-Series Foundation Models",
+    "authors": [
+      "Huu Hiep Nguyen",
+      "Dung Nguyen",
+      "Minh Hoang Nguyen",
+      "Dai Do",
+      "Hung Le"
+    ],
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "paper_url": "https://arxiv.org/abs/2607.24892",
+    "arxiv_id": "2607.24892",
+    "code_url": null,
+    "summary": "Uses an LLM as policy and value judge in Monte Carlo tree search over frozen TSFM-generated trajectories to satisfy natural-language forecasting context.",
+    "sources": [
+      "https://arxiv.org/abs/2607.24892",
+      "https://arxiv.org/html/2607.24892v1"
+    ],
+    "venue_source_url": null,
+    "source_platforms": [
+      "arxiv.org"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_count": null,
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass.",
+      "code_url": "No verified author-linked implementation repository recorded in this snapshot."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "arxiv.org",
+          "source_url": "https://arxiv.org/abs/2607.24892",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ]
+    },
+    "year_basis": "Earliest public paper year located in the cited sources; earlier releases may exist.",
+    "resource_type": null
+  },
+  {
+    "id": "memcast",
+    "category": "agent",
+    "title": "MemCast: Memory-Driven Time Series Forecasting with Experience-Conditioned Reasoning",
+    "authors": [
+      "Xiaoyu Tao",
+      "Mingyue Cheng",
+      "Ze Guo",
+      "Shuo Yu",
+      "Yaguo Liu",
+      "Qi Liu",
+      "Shijin Wang"
+    ],
+    "year": 2026,
+    "venue": "ICML 2026 (PMLR 306)",
+    "paper_url": "https://proceedings.mlr.press/v306/tao26a.html",
+    "arxiv_id": "2602.03164",
+    "code_url": "https://github.com/ustc-time-series/MemCast",
+    "summary": "A hierarchical memory of patterns, reasoning trajectories and general laws guides forecast generation, trajectory selection and reflective refinement.",
+    "sources": [
+      "https://proceedings.mlr.press/v306/tao26a.html",
+      "https://arxiv.org/abs/2602.03164",
+      "https://github.com/Xiaoyu-Tao/MemCast-TS",
+      "https://github.com/ustc-time-series/MemCast"
+    ],
+    "venue_source_url": "https://proceedings.mlr.press/v306/tao26a.html",
+    "limitations": "The code URL printed in the paper redirects to the verified ustc-time-series/MemCast repository; distinguish memory confidence updates from unrestricted test-time learning.",
+    "scope": "core",
+    "verified_at": "2026-11-03",
+    "source_platforms": [
+      "proceedings.mlr.press",
+      "arxiv.org",
+      "github.com"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_count": null,
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "proceedings.mlr.press",
+          "source_url": "https://proceedings.mlr.press/v306/tao26a.html",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ],
+      "code_url": [
+        {
+          "platform": "github.com",
+          "source_url": "https://github.com/ustc-time-series/MemCast",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text",
+          "note": "Author association checked against the cited paper or author project; the link alone does not establish implementation completeness."
+        }
+      ]
+    },
+    "year_basis": "Earliest public paper year located in the cited sources; earlier releases may exist.",
+    "resource_type": "author-linked repository"
+  },
+  {
+    "id": "nexus",
+    "category": "agent",
+    "title": "Nexus: An Agentic Framework for Context-Aware Time Series Forecasting",
+    "authors": [
+      "Sarkar Snigdha Sarathi Das",
+      "Palash Goyal",
+      "Mihir Parmar",
+      "Nanyun Peng",
+      "Vishy Tirumalashetty",
+      "Chun-Liang Li",
+      "Rui Zhang",
+      "Jinsung Yoon",
+      "Tomas Pfister"
+    ],
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "paper_url": "https://arxiv.org/abs/2605.14389",
+    "arxiv_id": "2605.14389",
+    "code_url": null,
+    "summary": "Temporal profiling constructs a numerical anchor, macro and micro reasoning produce contextual trajectories, and covariance-weighted Bayesian synthesis reconciles their forecasts.",
+    "sources": [
+      "https://arxiv.org/abs/2605.14389",
+      "https://arxiv.org/html/2605.14389v2"
+    ],
+    "venue_source_url": null,
+    "limitations": "The October 2026 v2 title and mechanism supersede the older shorter title; no author-linked implementation repository was located in the retrieved full text.",
+    "scope": "core",
+    "verified_at": "2026-11-03",
+    "source_platforms": [
+      "arxiv.org"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_count": null,
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass.",
+      "code_url": "No verified author-linked implementation repository recorded in this snapshot."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "arxiv.org",
+          "source_url": "https://arxiv.org/abs/2605.14389",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ]
+    },
+    "year_basis": "Earliest public paper year located in the cited sources; earlier releases may exist.",
+    "resource_type": null
+  },
+  {
+    "id": "prompt_evolution_forecasting",
+    "category": "agent",
+    "title": "Training-Free Continual Learning for Multimodal Forecasting via Prompt Evolution",
+    "authors": [
+      "Laurent Mombaerts",
+      "Jonathan Taws",
+      "Jacopo Gargano",
+      "Dinesh Gaddam",
+      "Kevin George",
+      "Srijan Tiwari",
+      "Shreyas Rajesh"
+    ],
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "paper_url": "https://arxiv.org/abs/2610.27468",
+    "arxiv_id": "2610.27468",
+    "code_url": null,
+    "summary": "Evolves a textual guidance block through outcome-based reflection and uses it to steer a frozen LLM forecaster on recent series paired with retrieved news.",
+    "sources": [
+      "https://arxiv.org/abs/2610.27468",
+      "https://www.amazon.science/publications/training-free-continual-learning-for-multimodal-forecasting-via-prompt-evolution"
+    ],
+    "venue_source_url": null,
+    "source_platforms": [
+      "arxiv.org",
+      "www.amazon.science"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_count": null,
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass.",
+      "code_url": "No verified author-linked implementation repository recorded in this snapshot."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "arxiv.org",
+          "source_url": "https://arxiv.org/abs/2610.27468",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ]
+    },
+    "year_basis": "Earliest public paper year located in the cited sources; earlier releases may exist.",
+    "resource_type": null
+  },
+  {
+    "id": "scaler",
+    "category": "agent",
+    "title": "Efficient Test-Time Scaling for LLM-based Time Series Forecasting",
+    "authors": [
+      "Xuan-May Le",
+      "Minh-Tuan Tran",
+      "Ling Luo",
+      "Uwe Aickelin",
+      "Dinh Phung",
+      "Trung Le"
+    ],
+    "year": 2026,
+    "venue": "KDD 2026 (author-reported)",
+    "paper_url": "https://arxiv.org/abs/2608.08675",
+    "arxiv_id": "2608.08675",
+    "code_url": "https://github.com/xuanmay2701/SCALER",
+    "summary": "A lightweight forecaster predicts coarse future shape and a frozen LLM performs fixed-step coarse-to-fine residual token refinement with a shorter token sequence.",
+    "sources": [
+      "https://arxiv.org/abs/2608.08675",
+      "https://arxiv.org/html/2608.08675v1",
+      "https://github.com/xuanmay2701/SCALER",
+      "https://www.youtube.com/watch?v=ZBRFbNHcKUk"
+    ],
+    "venue_source_url": "https://arxiv.org/abs/2608.08675",
+    "limitations": "Classify as reasoning/test-time refinement; it does not demonstrate open-ended tool orchestration. Publisher DOI access returned HTTP 403 in this pass.",
+    "scope": "core",
+    "verified_at": "2026-11-03",
+    "source_platforms": [
+      "arxiv.org",
+      "github.com",
+      "www.youtube.com"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_count": null,
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "arxiv.org",
+          "source_url": "https://arxiv.org/abs/2608.08675",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ],
+      "code_url": [
+        {
+          "platform": "github.com",
+          "source_url": "https://github.com/xuanmay2701/SCALER",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text",
+          "note": "Author association checked against the cited paper or author project; the link alone does not establish implementation completeness."
+        }
+      ]
+    },
+    "year_basis": "Earliest public paper year located in the cited sources; earlier releases may exist.",
+    "publication_note": "KDD 2026 (Oral, explicitly reported by author arXiv record and official code)",
+    "resource_type": "author-linked repository"
+  },
+  {
+    "id": "flairr-ts",
+    "category": "agent",
+    "title": "FLAIRR-TS - Forecasting LLM-Agents with Iterative Refinement and Retrieval for Time Series",
+    "authors": [
+      "Gunjan Jalori",
+      "Preetika Verma",
+      "Sercan O Arik"
+    ],
+    "year": 2025,
+    "venue": "Findings of EMNLP 2025",
+    "paper_url": "https://aclanthology.org/2025.findings-emnlp.834/",
+    "arxiv_id": "2508.19279",
+    "code_url": null,
+    "summary": "A forecaster agent and refiner agent adapt prompts at inference time using prior forecasts and retrieved analogues to produce numerical forecasts without intermediate code generation.",
+    "sources": [
+      "https://aclanthology.org/2025.findings-emnlp.834/",
+      "https://aclanthology.org/2025.findings-emnlp.834.pdf",
+      "https://arxiv.org/abs/2508.19279"
+    ],
+    "venue_source_url": "https://aclanthology.org/2025.findings-emnlp.834/",
+    "limitations": "No author-linked code repository was located in the verified paper or Anthology record; do not substitute a third-party implementation.",
+    "scope": "core",
+    "verified_at": "2026-11-03",
+    "source_platforms": [
+      "aclanthology.org",
+      "arxiv.org"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_count": null,
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass.",
+      "code_url": "No verified author-linked implementation repository recorded in this snapshot."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "aclanthology.org",
+          "source_url": "https://aclanthology.org/2025.findings-emnlp.834/",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ]
+    },
+    "year_basis": "Earliest public paper year located in the cited sources; earlier releases may exist.",
+    "resource_type": null
+  },
+  {
+    "id": "timecopilot",
+    "category": "agent",
+    "title": "TimeCopilot",
+    "authors": [
+      "Azul Garza",
+      "Renée Rosillo"
+    ],
+    "year": 2025,
+    "venue": "arXiv preprint",
+    "paper_url": "https://arxiv.org/abs/2509.00616",
+    "arxiv_id": "2509.00616",
+    "code_url": "https://github.com/TimeCopilot/timecopilot",
+    "summary": "An LLM agent orchestrates feature analysis, forecasting-model selection, cross-validation and ensembling through a unified forecasting toolkit.",
+    "sources": [
+      "https://arxiv.org/abs/2509.00616",
+      "https://arxiv.org/html/2509.00616v3",
+      "https://timecopilot.dev/",
+      "https://github.com/TimeCopilot/timecopilot"
+    ],
+    "venue_source_url": null,
+    "limitations": "The reported GIFT-Eval forecast ranking concerns the forecasting stack and ensemble; it does not by itself isolate the incremental value of LLM orchestration.",
+    "scope": "core",
+    "verified_at": "2026-11-03",
+    "source_platforms": [
+      "arxiv.org",
+      "timecopilot.dev",
+      "github.com"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_count": null,
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "arxiv.org",
+          "source_url": "https://arxiv.org/abs/2509.00616",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ],
+      "code_url": [
+        {
+          "platform": "github.com",
+          "source_url": "https://github.com/TimeCopilot/timecopilot",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text",
+          "note": "Author association checked against the cited paper or author project; the link alone does not establish implementation completeness."
+        }
+      ]
+    },
+    "year_basis": "Earliest public paper year located in the cited sources; earlier releases may exist.",
+    "publication_note": "arXiv preprint (2025); official project also lists NeurIPS BERTS 2025 workshop, not treated as a main-conference paper",
+    "resource_type": "author-linked repository"
+  },
+  {
+    "id": "timeseriesscientist",
+    "category": "agent",
+    "title": "TimeSeriesScientist: A General-Purpose AI Agent for Time Series Analysis",
+    "authors": [
+      "Haokun Zhao",
+      "Xiang Zhang",
+      "Jiaqi Wei",
+      "Yiwei Xu",
+      "Yuting He",
+      "Siqi Sun",
+      "Chenyu You"
+    ],
+    "year": 2025,
+    "venue": "arXiv preprint",
+    "paper_url": "https://arxiv.org/abs/2510.01538",
+    "arxiv_id": "2510.01538",
+    "code_url": "https://github.com/Y-Research-SBU/TimeSeriesScientist",
+    "summary": "Four specialized agents curate data, plan the model search, fit and validate forecasting configurations, and report the resulting workflow.",
+    "sources": [
+      "https://arxiv.org/abs/2510.01538",
+      "https://arxiv.org/html/2510.01538v2",
+      "https://github.com/Y-Research-SBU/TimeSeriesScientist"
+    ],
+    "venue_source_url": null,
+    "limitations": "The abstract reports eight established benchmarks; cost, run variance and comparisons under an equal search budget require full experimental-context review.",
+    "scope": "core",
+    "verified_at": "2026-11-03",
+    "source_platforms": [
+      "arxiv.org",
+      "github.com"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_count": null,
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "arxiv.org",
+          "source_url": "https://arxiv.org/abs/2510.01538",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ],
+      "code_url": [
+        {
+          "platform": "github.com",
+          "source_url": "https://github.com/Y-Research-SBU/TimeSeriesScientist",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text",
+          "note": "Author association checked against the cited paper or author project; the link alone does not establish implementation completeness."
+        }
+      ]
+    },
+    "year_basis": "Earliest public paper year located in the cited sources; earlier releases may exist.",
+    "publication_note": "arXiv preprint (2025); no acceptance decision verified",
+    "resource_type": "author-linked repository"
+  },
+  {
+    "id": "muse-bench",
+    "category": "benchmark",
+    "title": "Beyond Numerical Time Series: A Unified Benchmark for Multimodal Forecasting with Heterogeneous Context",
+    "authors": [
+      "Peng Chen",
+      "Zhihao Zhuang",
+      "Hongzhou Chen",
+      "Junhao Huang",
+      "Aiping Yang",
+      "Mengsen Wu",
+      "Yiding Liu",
+      "Xilin Dai",
+      "Zewei Dong"
+    ],
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "paper_url": "https://arxiv.org/abs/2609.15087",
+    "arxiv_id": "2609.15087",
+    "code_url": null,
+    "summary": "Compares numerical, multimodal, and LLM forecasters under shared windows and context ablations across heterogeneous contextual datasets.",
+    "sources": [
+      "https://arxiv.org/abs/2609.15087"
+    ],
+    "venue_source_url": "https://arxiv.org/abs/2609.15087",
+    "source_platforms": [
+      "arxiv.org"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_count": null,
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass.",
+      "code_url": "No verified author-linked implementation repository recorded in this snapshot."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "arxiv.org",
+          "source_url": "https://arxiv.org/abs/2609.15087",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ]
+    },
+    "year_basis": "Earliest public paper year located in the cited sources; earlier releases may exist.",
+    "resource_type": "code/data repository"
+  },
+  {
+    "id": "context_is_key",
+    "category": "benchmark",
+    "title": "Context is Key: A Benchmark for Forecasting with Essential Textual Information",
+    "authors": [
+      "Andrew Robert Williams",
+      "Arjun Ashok",
+      "Étienne Marcotte",
+      "Valentina Zantedeschi",
+      "Jithendaraa Subramanian",
+      "Roland Riachi",
+      "James Requeima",
+      "Alexandre Lacoste",
+      "Irina Rish",
+      "Nicolas Chapados",
+      "Alexandre Drouin"
+    ],
+    "year": 2024,
+    "venue": "ICML 2025",
+    "paper_url": "https://proceedings.mlr.press/v267/williams25a.html",
+    "arxiv_id": "2410.18959",
+    "code_url": "https://github.com/ServiceNow/context-is-key-forecasting",
+    "summary": "Tests forecasts on tasks whose solutions require textual background, constraints, or event information, alongside a direct LLM prompting baseline.",
+    "sources": [
+      "https://proceedings.mlr.press/v267/williams25a.html",
+      "https://arxiv.org/abs/2410.18959",
+      "https://github.com/ServiceNow/context-is-key-forecasting"
+    ],
+    "venue_source_url": "https://proceedings.mlr.press/v267/williams25a.html",
+    "source_platforms": [
+      "proceedings.mlr.press",
+      "arxiv.org",
+      "github.com"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_count": null,
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "proceedings.mlr.press",
+          "source_url": "https://proceedings.mlr.press/v267/williams25a.html",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ],
+      "code_url": [
+        {
+          "platform": "github.com",
+          "source_url": "https://github.com/ServiceNow/context-is-key-forecasting",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text",
+          "note": "Author association checked against the cited paper or author project; the link alone does not establish implementation completeness."
+        }
+      ]
+    },
+    "year_basis": "Earliest public paper year located in the cited sources; earlier releases may exist.",
+    "resource_type": "code/data repository"
+  },
+  {
+    "id": "time_mmd",
+    "category": "benchmark",
+    "title": "Time-MMD: Multi-Domain Multimodal Dataset for Time Series Analysis",
+    "authors": [
+      "Haoxin Liu",
+      "Shangqing Xu",
+      "Zhiyuan Zhao",
+      "Lingkai Kong",
+      "Harshavardhan Kamarthi",
+      "Aditya B. Sasanur",
+      "Megha Sharma",
+      "Jiaming Cui",
+      "Qingsong Wen",
+      "Chao Zhang",
+      "B. Aditya Prakash"
+    ],
+    "year": 2024,
+    "venue": "NeurIPS 2024 Datasets and Benchmarks Track",
+    "paper_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/8e7768122f3eeec6d77cd2b424b72413-Abstract-Datasets_and_Benchmarks_Track.html",
+    "arxiv_id": "2406.08627",
+    "code_url": "https://github.com/AdityaLab/Time-MMD",
+    "summary": "Provides aligned numerical series and textual information across nine domains with the MM-TSFlib library for evaluating multimodal forecasting.",
+    "sources": [
+      "https://proceedings.neurips.cc/paper_files/paper/2024/hash/8e7768122f3eeec6d77cd2b424b72413-Abstract-Datasets_and_Benchmarks_Track.html",
+      "https://arxiv.org/abs/2406.08627",
+      "https://github.com/AdityaLab/Time-MMD",
+      "https://github.com/AdityaLab/MM-TSFlib"
+    ],
+    "venue_source_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/8e7768122f3eeec6d77cd2b424b72413-Abstract-Datasets_and_Benchmarks_Track.html",
+    "source_platforms": [
+      "proceedings.neurips.cc",
+      "arxiv.org",
+      "github.com"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_count": null,
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "proceedings.neurips.cc",
+          "source_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/8e7768122f3eeec6d77cd2b424b72413-Abstract-Datasets_and_Benchmarks_Track.html",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ],
+      "code_url": [
+        {
+          "platform": "github.com",
+          "source_url": "https://github.com/AdityaLab/Time-MMD",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text",
+          "note": "Author association checked against the cited paper or author project; the link alone does not establish implementation completeness."
+        }
+      ]
+    },
+    "year_basis": "Earliest public paper year located in the cited sources; earlier releases may exist.",
+    "resource_type": "code/data repository"
+  },
+  {
+    "id": "forecast-workflow-bench",
+    "category": "evaluation",
+    "title": "Forecast Workflow Bench: Evaluating Language-Model Decisions with Budgeted Forecast Tools",
+    "authors": [
+      "Shunya Nagashima"
+    ],
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "paper_url": "https://arxiv.org/abs/2609.27385",
+    "arxiv_id": "2609.27385",
+    "code_url": "https://github.com/Neurogica/forecast-workflow-bench",
+    "summary": "A benchmark evaluates how language-model agents purchase forecasting tools, select histories and horizons, and choose capacities under an explicit decision-loss and cost objective.",
+    "sources": [
+      "https://arxiv.org/abs/2609.27385",
+      "https://arxiv.org/html/2609.27385v1",
+      "https://github.com/Neurogica/forecast-workflow-bench"
+    ],
+    "venue_source_url": null,
+    "limitations": "The 1,251 cases cover electricity and cycle hire with simulated capacity contracts; the metric is downstream decision utility under forecast cost, not solely forecast error.",
+    "scope": "forecast-tool decision evaluation",
+    "verified_at": "2026-11-03",
+    "source_platforms": [
+      "arxiv.org",
+      "github.com"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_count": null,
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "arxiv.org",
+          "source_url": "https://arxiv.org/abs/2609.27385",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ],
+      "code_url": [
+        {
+          "platform": "github.com",
+          "source_url": "https://github.com/Neurogica/forecast-workflow-bench",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text",
+          "note": "Author association checked against the cited paper or author project; the link alone does not establish implementation completeness."
+        }
+      ]
+    },
+    "year_basis": "Earliest public paper year located in the cited sources; earlier releases may exist.",
+    "resource_type": "author-linked repository"
+  },
+  {
+    "id": "rethinking-role-2026",
+    "category": "evaluation",
+    "title": "Rethinking the Role of LLMs in Time Series Forecasting",
+    "authors": [
+      "Xin Qiu",
+      "Junlong Tong",
+      "Yirong Sun",
+      "Yunpu Ma",
+      "Wei Zhang",
+      "Xiaoyu Shen"
+    ],
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "paper_url": "https://arxiv.org/abs/2602.14744",
+    "arxiv_id": "2602.14744",
+    "code_url": "https://github.com/EIT-NLP/LLM4TSF",
+    "summary": "A large-scale study of language-pretrained forecasting across eight billion observations and 17 scenarios contrasts alignment, architecture and pretraining under in-domain and cross-domain tests.",
+    "sources": [
+      "https://arxiv.org/abs/2602.14744",
+      "https://arxiv.org/html/2602.14744v2",
+      "https://github.com/EIT-NLP/LLM4TSF"
+    ],
+    "venue_source_url": null,
+    "limitations": "The reported gains arise under changed scale, alignment and generalization settings; present this as a boundary-condition counterpoint to the 2024 ablations rather than a like-for-like universal refutation.",
+    "scope": "core",
+    "verified_at": "2026-11-03",
+    "source_platforms": [
+      "arxiv.org",
+      "github.com"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_count": null,
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "arxiv.org",
+          "source_url": "https://arxiv.org/abs/2602.14744",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ],
+      "code_url": [
+        {
+          "platform": "github.com",
+          "source_url": "https://github.com/EIT-NLP/LLM4TSF",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text",
+          "note": "Author association checked against the cited paper or author project; the link alone does not establish implementation completeness."
+        }
+      ]
+    },
+    "year_basis": "Earliest public paper year located in the cited sources; earlier releases may exist.",
+    "resource_type": "author-linked repository"
+  },
+  {
+    "id": "timevista",
+    "category": "evaluation",
+    "title": "TimeVista: Exploring and Exploiting Vision-Language Models as Judges for Time Series Forecasting",
+    "authors": [
+      "Zhi Chen",
+      "Yuxuan Wang",
+      "Jialong Wu",
+      "Yong Liu",
+      "Haoran Zhang",
+      "Xingjian Su",
+      "Jianmin Wang",
+      "Mingsheng Long"
+    ],
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "paper_url": "https://arxiv.org/abs/2606.16173",
+    "arxiv_id": "2606.16173",
+    "code_url": null,
+    "summary": "Studies VLM judgments of plotted forecasts against human preferences; complements numerical error metrics.",
+    "sources": [
+      "https://arxiv.org/abs/2606.16173"
+    ],
+    "venue_source_url": "https://arxiv.org/abs/2606.16173",
+    "source_platforms": [
+      "arxiv.org"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_count": null,
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass.",
+      "code_url": "No verified author-linked implementation repository recorded in this snapshot."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "arxiv.org",
+          "source_url": "https://arxiv.org/abs/2606.16173",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ]
+    },
+    "year_basis": "Earliest public paper year located in the cited sources; earlier releases may exist.",
+    "resource_type": null
+  },
+  {
+    "id": "llm-usefulness-2024",
+    "category": "evaluation",
+    "title": "Are Language Models Actually Useful for Time Series Forecasting?",
+    "authors": [
+      "Mingtian Tan",
+      "Mike A. Merrill",
+      "Vinayak Gupta",
+      "Tim Althoff",
+      "Thomas Hartvigsen"
+    ],
+    "year": 2024,
+    "venue": "NeurIPS 2024 main conference",
+    "paper_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/6ed5bf446f59e2c6646d23058c86424b-Abstract-Conference.html",
+    "arxiv_id": "2406.16964",
+    "code_url": "https://github.com/BennyTMT/LLMsForTimeSeries",
+    "summary": "Controlled ablations remove or replace the LLM in three popular forecasting architectures and test whether language pretraining improves accuracy, few-shot behavior or computational efficiency.",
+    "sources": [
+      "https://proceedings.neurips.cc/paper_files/paper/2024/hash/6ed5bf446f59e2c6646d23058c86424b-Abstract-Conference.html",
+      "https://proceedings.neurips.cc/paper_files/paper/2024/file/6ed5bf446f59e2c6646d23058c86424b-Paper-Conference.pdf",
+      "https://github.com/BennyTMT/LLMsForTimeSeries"
+    ],
+    "venue_source_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/6ed5bf446f59e2c6646d23058c86424b-Abstract-Conference.html",
+    "limitations": "Its negative conclusions concern the tested numeric forecasting architectures and protocols; they do not establish that language context, tool use or all future LLM forecasting methods are useless.",
+    "scope": "core",
+    "verified_at": "2026-11-03",
+    "source_platforms": [
+      "proceedings.neurips.cc",
+      "github.com"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_count": null,
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "proceedings.neurips.cc",
+          "source_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/6ed5bf446f59e2c6646d23058c86424b-Abstract-Conference.html",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ],
+      "code_url": [
+        {
+          "platform": "github.com",
+          "source_url": "https://github.com/BennyTMT/LLMsForTimeSeries",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text",
+          "note": "Author association checked against the cited paper or author project; the link alone does not establish implementation completeness."
+        }
+      ]
+    },
+    "year_basis": "Earliest public paper year located in the cited sources; earlier releases may exist.",
+    "resource_type": "author-linked repository"
+  },
+  {
+    "id": "atsf-position",
+    "category": "survey",
+    "title": "Position: Beyond Model-Centric Prediction -- Agentic Time Series Forecasting",
+    "authors": [
+      "Mingyue Cheng",
+      "Xiaoyu Tao",
+      "Qi Liu",
+      "Ze Guo",
+      "Enhong Chen"
+    ],
+    "year": 2026,
+    "venue": "arXiv position paper (2026)",
+    "paper_url": "https://arxiv.org/abs/2602.01776",
+    "arxiv_id": "2602.01776",
+    "code_url": null,
+    "summary": "A forecasting-focused position defines perception, planning, action, reflection and memory, and contrasts workflow, reinforcement-learning and hybrid agentic designs.",
+    "sources": [
+      "https://arxiv.org/abs/2602.01776",
+      "https://ustc-time-series.github.io/atsf/"
+    ],
+    "venue_source_url": null,
+    "limitations": "This is a conceptual position and research agenda, not a single evaluated forecasting algorithm or an independent benchmark.",
+    "scope": "core",
+    "verified_at": "2026-11-03",
+    "source_platforms": [
+      "arxiv.org",
+      "ustc-time-series.github.io"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_count": null,
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass.",
+      "code_url": "No verified author-linked implementation repository recorded in this snapshot."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "arxiv.org",
+          "source_url": "https://arxiv.org/abs/2602.01776",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ]
+    },
+    "year_basis": "Earliest public paper year located in the cited sources; earlier releases may exist.",
+    "resource_type": null
+  },
+  {
+    "id": "llm-agents-ts-survey",
+    "category": "survey",
+    "title": "LLM Agents for Time-Series: A Survey",
+    "authors": [
+      "Yilong Chen",
+      "Xiao Qin",
+      "Chenghao Liu",
+      "Liang Wu",
+      "Noelle I. Samia",
+      "Kaize Ding"
+    ],
+    "year": 2026,
+    "venue": "Findings of EMNLP 2026",
+    "paper_url": "https://aclanthology.org/2026.findings-emnlp.367/",
+    "arxiv_id": "2608.26226",
+    "code_url": null,
+    "summary": "A problem-driven taxonomy maps time-series agents across forecasting and reasoning, augmentation, anomaly diagnosis and decision support, comparing tools, memory and workflows.",
+    "sources": [
+      "https://aclanthology.org/2026.findings-emnlp.367/",
+      "https://arxiv.org/abs/2608.26226"
+    ],
+    "venue_source_url": "https://aclanthology.org/2026.findings-emnlp.367/",
+    "limitations": "The scope includes non-forecasting tasks; filter task categories when using its references to populate a numerical-forecasting list.",
+    "scope": "core",
+    "verified_at": "2026-11-03",
+    "source_platforms": [
+      "aclanthology.org",
+      "arxiv.org"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_count": null,
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass.",
+      "code_url": "No verified author-linked implementation repository recorded in this snapshot."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "aclanthology.org",
+          "source_url": "https://aclanthology.org/2026.findings-emnlp.367/",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ]
+    },
+    "year_basis": "Earliest public paper year located in the cited sources; earlier releases may exist.",
+    "resource_type": null
+  },
+  {
+    "id": "tsf-slr-paiva",
+    "category": "survey",
+    "title": "Leveraging Large Language Models for time series forecasting: A systematic literature review",
+    "authors": [
+      "Gabriel Ikaro Fonseca de Paiva",
+      "Arthur Caio Vargas e Pinto",
+      "Marcos Antonio Alves",
+      "Omid Orang",
+      "Lucas Malacarne Astore",
+      "Marcus Vinicius Moraes Oliveira",
+      "Frederico Gadelha Guimarães"
+    ],
+    "year": 2026,
+    "venue": "Knowledge-Based Systems 343 (2026), 115938",
+    "paper_url": "https://doi.org/10.1016/j.knosys.2026.115938",
+    "arxiv_id": null,
+    "doi": "10.1016/j.knosys.2026.115938",
+    "code_url": null,
+    "summary": "Reviews LLM-based numerical forecasting with an emphasis on adaptation choices, datasets, and evaluation practices.",
+    "sources": [
+      "https://doi.org/10.1016/j.knosys.2026.115938",
+      "https://www.sciencedirect.com/science/article/pii/S0950705126006647"
+    ],
+    "venue_source_url": "https://www.sciencedirect.com/science/article/pii/S0950705126006647",
+    "source_platforms": [
+      "doi.org",
+      "www.sciencedirect.com"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_count": null,
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass.",
+      "code_url": "No verified author-linked implementation repository recorded in this snapshot."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "www.sciencedirect.com",
+          "source_url": "https://www.sciencedirect.com/science/article/pii/S0950705126006647",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ]
+    },
+    "year_basis": "Earliest public paper year located in the cited sources; earlier releases may exist.",
+    "resource_type": null
+  },
+  {
+    "id": "reasoning-agents-survey",
+    "category": "survey",
+    "title": "A Survey of Reasoning and Agentic Systems in Time Series with Large Language Models",
+    "authors": [
+      "Ching Chang",
+      "Yidan Shi",
+      "Defu Cao",
+      "Wei Yang",
+      "Jeehyun Hwang",
+      "Haixin Wang",
+      "Jiacheng Pang",
+      "Wei Wang",
+      "Yan Liu",
+      "Wen-Chih Peng",
+      "Tien-Fu Chen"
+    ],
+    "year": 2025,
+    "venue": "TMLR 2026",
+    "paper_url": "https://openreview.net/forum?id=l3QW42g6u3",
+    "arxiv_id": "2509.11575",
+    "code_url": "https://github.com/blacksnail789521/Time-Series-Reasoning-Survey",
+    "summary": "A taxonomy crosses direct, chain and branching reasoning structures with task objectives and tags for tool use, memory, multimodality and adaptation.",
+    "sources": [
+      "https://openreview.net/forum?id=l3QW42g6u3",
+      "https://arxiv.org/abs/2509.11575",
+      "https://jmlr.org/tmlr/papers/",
+      "https://github.com/blacksnail789521/Time-Series-Reasoning-Survey"
+    ],
+    "venue_source_url": "https://jmlr.org/tmlr/papers/",
+    "limitations": "The first-public year is 2025 while the verified TMLR publication is June 2026; the paper surveys reasoning beyond numeric forecasting.",
+    "scope": "core",
+    "verified_at": "2026-11-03",
+    "source_platforms": [
+      "openreview.net",
+      "arxiv.org",
+      "jmlr.org",
+      "github.com"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_count": null,
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "jmlr.org",
+          "source_url": "https://jmlr.org/tmlr/papers/",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ],
+      "code_url": [
+        {
+          "platform": "github.com",
+          "source_url": "https://github.com/blacksnail789521/Time-Series-Reasoning-Survey",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text",
+          "note": "Author association checked against the cited paper or author project; the link alone does not establish implementation completeness."
+        }
+      ]
+    },
+    "year_basis": "Earliest public paper year located in the cited sources; earlier releases may exist.",
+    "resource_type": "literature collection"
+  },
+  {
+    "id": "llmts-survey-jiang",
+    "category": "survey",
+    "title": "Empowering Time Series Analysis with Large Language Models: A Survey",
+    "authors": [
+      "Yushan Jiang",
+      "Zijie Pan",
+      "Xikun Zhang",
+      "Sahil Garg",
+      "Anderson Schneider",
+      "Yuriy Nevmyvaka",
+      "Dongjin Song"
+    ],
+    "year": 2024,
+    "venue": "IJCAI 2024, Survey Track",
+    "paper_url": "https://ijcai.org/proceedings/2024/895",
+    "arxiv_id": null,
+    "doi": "10.24963/ijcai.2024/895",
+    "code_url": null,
+    "summary": "Organizes LLM-based time-series pipelines by querying, tokenization, prompts, fine-tuning, and model integration.",
+    "sources": [
+      "https://ijcai.org/proceedings/2024/895"
+    ],
+    "venue_source_url": "https://ijcai.org/proceedings/2024/895",
+    "source_platforms": [
+      "ijcai.org"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_count": null,
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass.",
+      "code_url": "No verified author-linked implementation repository recorded in this snapshot."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "ijcai.org",
+          "source_url": "https://ijcai.org/proceedings/2024/895",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ]
+    },
+    "year_basis": "Earliest public paper year located in the cited sources; earlier releases may exist.",
+    "resource_type": null
+  },
+  {
+    "id": "llmts-survey-zhang",
+    "category": "survey",
+    "title": "Large Language Models for Time Series: A Survey",
+    "authors": [
+      "Xiyuan Zhang",
+      "Ranak Roy Chowdhury",
+      "Rajesh K. Gupta",
+      "Jingbo Shang"
+    ],
+    "year": 2024,
+    "venue": "IJCAI 2024, Survey Track",
+    "paper_url": "https://ijcai.org/proceedings/2024/921",
+    "arxiv_id": "2402.01801",
+    "doi": "10.24963/ijcai.2024/921",
+    "code_url": null,
+    "summary": "Surveys prompting, quantization, alignment, visual bridging, and tool integration across time-series tasks.",
+    "sources": [
+      "https://ijcai.org/proceedings/2024/921",
+      "https://arxiv.org/abs/2402.01801"
+    ],
+    "venue_source_url": "https://ijcai.org/proceedings/2024/921",
+    "source_platforms": [
+      "ijcai.org",
+      "arxiv.org"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_count": null,
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass.",
+      "code_url": "No verified author-linked implementation repository recorded in this snapshot."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "ijcai.org",
+          "source_url": "https://ijcai.org/proceedings/2024/921",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ]
+    },
+    "year_basis": "Earliest public paper year located in the cited sources; earlier releases may exist.",
+    "resource_type": null
+  },
+  {
+    "id": "llm4series",
+    "category": "toolkit",
+    "title": "LLM4Series: Structured Prompting for Time Series Forecasting with LLMs",
+    "authors": [
+      "Wesley Barbosa Silva",
+      "Maria Fernanda Aquino Freitas Scarcela",
+      "Luiz Zairo Bastos Viana",
+      "Carlos Caminha",
+      "João Paulo do Vale Madeiro",
+      "José Wellington Franco da Silva"
+    ],
+    "year": 2026,
+    "venue": "ICLR 2026 TSALM Workshop (author-reported)",
+    "paper_url": "https://openreview.net/forum?id=6fbcYFRoUL",
+    "arxiv_id": null,
+    "code_url": "https://github.com/llm4time/llm4series",
+    "summary": "Provides modular serialization, structured prompts, LLM interfaces, and forecast evaluation utilities.",
+    "sources": [
+      "https://openreview.net/forum?id=6fbcYFRoUL",
+      "https://github.com/llm4time/llm4series",
+      "https://enginelab.ufc.br/publicacoes/llm4series-structured-prompting-for-time-series-forecasting-with-llms",
+      "https://openreview.net/pdf?id=6fbcYFRoUL"
+    ],
+    "venue_source_url": "https://github.com/llm4time/llm4series",
+    "source_platforms": [
+      "openreview.net",
+      "github.com",
+      "enginelab.ufc.br"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_count": null,
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "github.com",
+          "source_url": "https://github.com/llm4time/llm4series",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ],
+      "code_url": [
+        {
+          "platform": "github.com",
+          "source_url": "https://github.com/llm4time/llm4series",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text",
+          "note": "Author association checked against the cited paper or author project; the link alone does not establish implementation completeness."
+        }
+      ]
+    },
+    "year_basis": "Earliest public paper year located in the cited sources; earlier releases may exist.",
+    "resource_type": "author-linked repository"
+  },
+  {
+    "id": "tsflab",
+    "category": "toolkit",
+    "title": "TSFLab: A Self-Improving Agent-Agnostic Workbench for Time Series Forecasting Research",
+    "authors": [
+      "ChengAo Shen",
+      "Yanjun Zhao",
+      "Haoxin Liu",
+      "Bonnie Chen",
+      "Miles Ma",
+      "Dongjin Song",
+      "Hanghang Tong",
+      "Qingsong Wen",
+      "Jingrui He",
+      "Jingchao Ni"
+    ],
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "paper_url": "https://arxiv.org/abs/2610.40901",
+    "arxiv_id": "2610.40901",
+    "code_url": "https://github.com/D2I-Group/TSFLab",
+    "summary": "A shared workbench supplies coding agents with resources and tools for forecast-model reproduction, benchmarking, maintenance and pilot method development.",
+    "sources": [
+      "https://arxiv.org/abs/2610.40901",
+      "https://github.com/D2I-Group/TSFLab"
+    ],
+    "venue_source_url": null,
+    "limitations": "This is research automation around forecasting models; place in an adjacent tooling subsection rather than equating it with an inference-time forecasting agent.",
+    "scope": "adjacent tooling",
+    "verified_at": "2026-11-03",
+    "source_platforms": [
+      "arxiv.org",
+      "github.com"
+    ],
+    "fetched_at": "2026-11-03",
+    "citation_count": null,
+    "citation_counts": [],
+    "download_status": "not_requested",
+    "pdf_verification_status": "unverified",
+    "missing_fields": {
+      "citation_count": "Not collected in this curation pass."
+    },
+    "field_sources": {
+      "venue": [
+        {
+          "platform": "arxiv.org",
+          "source_url": "https://arxiv.org/abs/2610.40901",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text"
+        }
+      ],
+      "code_url": [
+        {
+          "platform": "github.com",
+          "source_url": "https://github.com/D2I-Group/TSFLab",
+          "checked_at": "2026-11-03T02:45:04Z",
+          "evidence_type": "page_text",
+          "note": "Author association checked against the cited paper or author project; the link alone does not establish implementation completeness."
+        }
+      ]
+    },
+    "year_basis": "Earliest public paper year located in the cited sources; earlier releases may exist.",
+    "resource_type": "author-linked repository"
+  }
+]
